@@ -5,6 +5,7 @@ import board
 import digitalio
 import busio
 import math
+import os
 import time
 import numpy as np
 
@@ -64,10 +65,13 @@ mask_surface = pygame.Surface((WIDTH, HEIGHT), pygame.SRCALPHA)
 mask_surface.fill(BLACK)
 
 # Load fonts
-font = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 8)
-font_mid = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 6)
-font_small = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 5)
-font_tiny = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 3)
+_ASSET_DIR = os.path.dirname(__file__)
+_FONT_BOLD = os.path.join(_ASSET_DIR, "ViperDisplay-Bold.ttf")
+
+font = pygame.font.Font(_FONT_BOLD, 8)
+font_mid = pygame.font.Font(_FONT_BOLD, 6)
+font_small = pygame.font.Font(_FONT_BOLD, 5)
+font_tiny = pygame.font.Font(_FONT_BOLD, 3)
 
 
 # ---------------------------- FC data Variables (for testing) ----------------------------------------

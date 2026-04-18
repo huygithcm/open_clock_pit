@@ -88,6 +88,7 @@ for disp_id, pins in DISPLAY_HARDWARE_MAP.items():
 # Map of driver name to constructor
 DRIVER_MAP = {
     "ST7735": ST7735.ST7735R,
+    "ST7735S": ST7735.ST7735S,
     "ST7789": ST7789.ST7789
 }
 
@@ -129,8 +130,8 @@ def init_display(display_id, module_obj):
         "baudrate": 52000000
     }
 
-    # Add invert factor when driver is ST7735
-    if driver_name == "ST7735":
+    # Add invert factor when driver is ST7735 family
+    if driver_name in {"ST7735", "ST7735S"}:
         display_kwargs["invert"] = mod_cfg.get("invert")
     
     disp = constructor(**display_kwargs)

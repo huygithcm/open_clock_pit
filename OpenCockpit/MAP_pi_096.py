@@ -5,6 +5,7 @@ import board
 import digitalio
 import busio
 import math
+import os
 import time
 import numpy as np
 
@@ -47,16 +48,19 @@ screen.fill(BLACK)
 clock = pygame.time.Clock()
 
 # Load fonts
-font = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 8)
-font_mid = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 6)
-font_small = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 5)
-font_tiny = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf", 3)
+_ASSET_DIR = os.path.dirname(__file__)
+_FONT_BOLD = os.path.join(_ASSET_DIR, "ViperDisplay-Bold.ttf")
+
+font = pygame.font.Font(_FONT_BOLD, 8)
+font_mid = pygame.font.Font(_FONT_BOLD, 6)
+font_small = pygame.font.Font(_FONT_BOLD, 5)
+font_tiny = pygame.font.Font(_FONT_BOLD, 3)
 
 
 # ---------------------------- Map Configuration ----------------------------------------
 
 # MAP Configuration
-MAP_PATH = "/boot/firmware/OpenCockpit/map.png"
+MAP_PATH = os.path.join(_ASSET_DIR, "map.png")
 MAP_LAT_TOP, MAP_LON_LEFT     = 36.5667, 127.1867
 MAP_LAT_BOTTOM, MAP_LON_RIGHT = 36.3263, 127.6326
 

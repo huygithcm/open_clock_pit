@@ -4,21 +4,23 @@ import board
 import digitalio
 import busio
 import math
+import os
 import pygame
 import time
 import numpy as np
 
-import adafruit_rgb_display.st7789 as ST7789
+import adafruit_rgb_display.st7735 as ST7735
 
 
 # Display hardware configuration (used by main.py to initialize)
 DISPLAY_CONFIG = {
-    "driver": "ST7789",
+    "driver": "ST7735",
     "width": 135,
     "height": 240,
     "rotation": 0,
     "x_offset": 53,
-    "y_offset": 40
+    "y_offset": 40,
+    "invert": True
 }
 
 
@@ -47,9 +49,12 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 clock = pygame.time.Clock()
 
 # Load fonts
-font = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf",8)
-font_mid = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf",6)
-font_small = pygame.font.Font("/boot/firmware/OpenCockpit/ViperDisplay-Bold.ttf",5)
+_ASSET_DIR = os.path.dirname(__file__)
+_FONT_BOLD = os.path.join(_ASSET_DIR, "ViperDisplay-Bold.ttf")
+
+font = pygame.font.Font(_FONT_BOLD, 8)
+font_mid = pygame.font.Font(_FONT_BOLD, 6)
+font_small = pygame.font.Font(_FONT_BOLD, 5)
 
 
 # ---------------------------- FC data Variables (for testing) ----------------------------------------
@@ -484,7 +489,7 @@ def main(MSP_data):
         raw = pygame.image.tostring(screen, "RGB")
         # Convert RGB888 to RGB565
         buf = rgb888_to_rgb565(raw, WIDTH, HEIGHT)
-        # ST7789 Display update (block write)
+        # ST7735 Display update (block write)
         disp_7789._block(0, 0, WIDTH - 1, HEIGHT - 1, buf)
 
 
@@ -494,14 +499,14 @@ if __name__ == "__main__":
 
     # ---------------------------- Base Configuration ----------------------------------------
 
-    # Init 7789 SPI Display
+    # Init ST7735 SPI Display
     spi = busio.SPI(board.SCK, MOSI=board.MOSI)
 
     cs_7789  = digitalio.DigitalInOut(board.D5)
     dc_7789  = digitalio.DigitalInOut(board.D25)
     rst_7789 = digitalio.DigitalInOut(board.D22)
 
-    disp_7789 = ST7789.ST7789(
+    disp_7789 = ST7735.ST7735R(
         spi,
         cs=cs_7789,
         dc=dc_7789,
@@ -511,6 +516,7 @@ if __name__ == "__main__":
         rotation=0,
         x_offset=53,
         y_offset=40,
+        invert=True,
         baudrate=36000000
     )
 
