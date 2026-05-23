@@ -1,11 +1,57 @@
 import threading
 import time
 import sys
+import os
+import signal
+import subprocess
 import pygame
 import board
 import digitalio
 import busio
 import numpy as np
+
+
+# Kill any previous instances of main.py / main_sim.py so SPI/GPIO are free.
+# Must run BEFORE busio.SPI() and digitalio.DigitalInOut() below.
+def _kill_previous_instances():
+    keep = {os.getpid(), os.getppid()}
+    targets = []
+    for entry in os.listdir("/proc"):
+        if not entry.isdigit():
+            continue
+        pid = int(entry)
+        if pid in keep:
+            continue
+        try:
+            with open(f"/proc/{pid}/cmdline", "rb") as f:
+                cmdline = f.read().replace(b"\x00", b" ").decode("utf-8", "ignore")
+        except (FileNotFoundError, PermissionError, ProcessLookupError):
+            continue
+        if "python" not in cmdline:
+            continue
+        if "main.py" not in cmdline and "main_sim.py" not in cmdline:
+            continue
+        targets.append(pid)
+
+    for pid in targets:
+        for sig in (signal.SIGTERM, signal.SIGKILL):
+            try:
+                os.kill(pid, sig)
+            except (ProcessLookupError, PermissionError):
+                break
+            time.sleep(0.3)
+            try:
+                os.kill(pid, 0)
+            except ProcessLookupError:
+                print(f"Killed previous instance PID {pid}")
+                break
+
+    if targets:
+        time.sleep(0.5)  # let GPIO/SPI release
+
+
+_kill_previous_instances()
+
 
 # 모듈 임포트
 import MSP_Read_pi
@@ -92,7 +138,12 @@ DRIVER_MAP = {
     "ST7789": ST7789.ST7789
 }
 
-# Initializes the appropriate display for the hardware pin 
+# Mock backlight pin for ST7735S when BL is hardwired to VCC on the module
+class _MockBacklight:
+    def switch_to_output(self, value=1):
+        pass
+
+# Initializes the appropriate display for the hardware pin
 # based on the ID and module object received from SELECTED_DISPLAYS.
 def init_display(display_id, module_obj):
 
@@ -100,7 +151,7 @@ def init_display(display_id, module_obj):
 
     driver_name = mod_cfg.get("driver")
     constructor = DRIVER_MAP.get(driver_name)
-    
+
     if constructor is None:
         raise RuntimeError(f"Unsupported driver: {driver_name}")
 
@@ -130,10 +181,15 @@ def init_display(display_id, module_obj):
         "baudrate": 52000000
     }
 
-    # Add invert factor when driver is ST7735 family
-    if driver_name in {"ST7735", "ST7735S"}:
-        display_kwargs["invert"] = mod_cfg.get("invert")
-    
+    if driver_name == "ST7735":
+        # ST7735R supports invert and bgr
+        display_kwargs["invert"] = mod_cfg.get("invert", False)
+        if mod_cfg.get("bgr") is not None:
+            display_kwargs["bgr"] = mod_cfg.get("bgr")
+    elif driver_name == "ST7735S":
+        # ST7735S requires bl (backlight) pin — use mock if not wired to GPIO
+        display_kwargs["bl"] = _MockBacklight()
+
     disp = constructor(**display_kwargs)
     
     return disp
@@ -179,8 +235,8 @@ def display_loop(module, disp, width, height, fps):
         roll  = snap["roll"]  if snap["roll"]  is not None else 0.0
         yaw   = snap["yaw"]   if snap["yaw"]   is not None else 0.0
         alt = snap["alt"] if snap["alt"] is not None else 0.0
-        lat = snap["lat"] if snap["lat"] is not None else 36.45325
-        lon = snap["lon"] if snap["lon"] is not None else 127.40603
+        lat = snap["lat"] if snap["lat"] is not None else 10.7769
+        lon = snap["lon"] if snap["lon"] is not None else 106.7009
         v_speed = snap["v_speed"] if snap["v_speed"] is not None else 0.0
         speed_3d = snap["speed_3d"] if snap["speed_3d"] is not None else 0.0
         sats = snap["sats"] if snap["sats"] is not None else 0

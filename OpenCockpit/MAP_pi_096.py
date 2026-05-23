@@ -61,8 +61,9 @@ font_tiny = pygame.font.Font(_FONT_BOLD, 3)
 
 # MAP Configuration
 MAP_PATH = os.path.join(_ASSET_DIR, "map.png")
-MAP_LAT_TOP, MAP_LON_LEFT     = 36.5667, 127.1867
-MAP_LAT_BOTTOM, MAP_LON_RIGHT = 36.3263, 127.6326
+# Ho Chi Minh City area
+MAP_LAT_TOP, MAP_LON_LEFT     = 10.90, 106.51
+MAP_LAT_BOTTOM, MAP_LON_RIGHT = 10.65, 106.89
 
 '''      Map configuration diagram
 
@@ -93,8 +94,8 @@ OVERSCAN = int(math.sqrt(WIDTH**2 + HEIGHT**2)) + 1
 # ---------------------------- FC data Variables (for testing) ----------------------------------------
 yaw = 0.0               # deg
 v_speed = 21.0          # vertical speed
-lat = 36.45325          # latitude
-lon = 127.40603         # longitude
+lat = 10.7769           # latitude (HCMC center)
+lon = 106.7009          # longitude
 alt = 256               # altitude
 speed_3d = 94           # 3d speed
 sats = 10               # GPS satellites count

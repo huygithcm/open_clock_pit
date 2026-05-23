@@ -14,13 +14,12 @@ import adafruit_rgb_display.st7735 as ST7735
 
 # Display hardware configuration (used by main.py to initialize)
 DISPLAY_CONFIG = {
-    "driver": "ST7735",
+    "driver": "ST7735S",
     "width": 128,
     "height": 128,
     "rotation": 180,
     "x_offset": 2,
     "y_offset": 1,
-    "invert": True
 }
 
 
