@@ -1,5 +1,4 @@
 """Flask web UI for OpenCockpit — live telemetry and runtime config."""
-
 import glob
 import io
 import json

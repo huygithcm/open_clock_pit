@@ -1,0 +1,18 @@
+pygame 2.6.1 (SDL 2.28.4, Python 3.13.5)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+Killed previous instance PID 11399
+Killed previous instance PID 11401
+[CFG] Loaded display config from config.json: {'Display_1': 'HUD_0.85', 'Display_2': 'MAP_0.96', 'Display_3': 'MFD_0.96', 'Display_4': 'INFO_0.96'}
+MSP Simulator started (no real FC required).
+[WEB] UI listening on http://0.0.0.0:5000
+--- Display Initialization Start ---
+ * Serving Flask app 'web_app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.83:5000
+[33mPress CTRL+C to quit[0m
+192.168.1.79 - - [28/May/2026 12:44:53] "GET / HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 12:44:53] "[36mGET /static/gauge-style.css HTTP/1.1[0m" 304 -
+192.168.1.79 - - [28/May/2026 12:44:53] "[36mGET /static/gauge-app.js HTTP/1.1[0m" 304 -
