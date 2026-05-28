@@ -1,0 +1,13 @@
+{
+  "displays": {
+    "Display_1": "HUD_0.85",
+    "Display_2": "MAP_0.96",
+    "Display_3": "MFD_0.96",
+    "Display_4": "INFO_0.96"
+  },
+  "fc": {
+    "baudrate": 115200,
+    "port": "/dev/serial0",
+    "protocol": "auto"
+  }
+}

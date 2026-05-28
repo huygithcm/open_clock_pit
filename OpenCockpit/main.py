@@ -14,7 +14,21 @@ import numpy as np
 # Kill any previous instances of main.py / main_sim.py so SPI/GPIO are free.
 # Must run BEFORE busio.SPI() and digitalio.DigitalInOut() below.
 def _kill_previous_instances():
-    keep = {os.getpid(), os.getppid()}
+    my_pid = os.getpid()
+    keep = {my_pid}
+
+    # Only protect parent if it's the sudo wrapper. If we were spawned by another
+    # python (e.g. web-triggered restart), the parent IS the previous instance
+    # that we *must* kill.
+    ppid = os.getppid()
+    try:
+        with open(f"/proc/{ppid}/cmdline", "rb") as f:
+            parent_cmd = f.read().replace(b"\x00", b" ").decode("utf-8", "ignore")
+    except Exception:
+        parent_cmd = ""
+    if "sudo" in parent_cmd and "python" not in parent_cmd:
+        keep.add(ppid)
+
     targets = []
     for entry in os.listdir("/proc"):
         if not entry.isdigit():
@@ -84,6 +98,16 @@ SELECTED_DISPLAYS = {
     "Display_4": "INFO_0.96",
 }
 # ==========================================================
+
+# Override SELECTED_DISPLAYS from web UI config (config.json) if present
+try:
+    import web_app
+    _saved = web_app.load_config_from_disk()
+    if _saved and isinstance(_saved.get("displays"), dict) and _saved["displays"]:
+        SELECTED_DISPLAYS = _saved["displays"]
+        print(f"[CFG] Loaded display config from config.json: {SELECTED_DISPLAYS}")
+except Exception as _e:
+    print(f"[CFG] Web config not loaded: {_e}")
 
 
 # Define SPI pinmap of Raspberry Pi
@@ -280,6 +304,14 @@ def main():
     # Start MSP reading thread
     threading.Thread(target=MSP_Read_pi.main, daemon=True).start()
 
+    # Start web UI (Flask)
+    try:
+        import web_app
+        web_app.init(MSP_Read_pi, SELECTED_DISPLAYS, list(MODULE_MAP.keys()))
+        web_app.start(host="0.0.0.0", port=5000)
+    except Exception as e:
+        print(f"[WEB] Failed to start: {e}")
+
     pygame.init()
     Display_thread_lists = []
 
@@ -315,6 +347,12 @@ def main():
             loop = threading.Thread(target=display_loop, args=(module_obj, disp_hw, width, height, fps), daemon=True)
             loop.start()
             Display_thread_lists.append(loop)
+            try:
+                import web_app as _w
+                _w.mark_running(disp_id)
+                _w.register_display(disp_id, module_obj)
+            except Exception:
+                pass
             print(f"Success: {disp_id} initialized with {mod_key}")
             
         except Exception as e:

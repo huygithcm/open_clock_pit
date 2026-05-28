@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OpenCockpit — Tactical Console</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!--                          TOP BAR                              -->
+<!-- ============================================================ -->
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-dot"></span>
+    <div class="brand-text">
+      <div class="brand-title">OPEN&nbsp;COCKPIT</div>
+      <div class="brand-sub">TACTICAL TELEMETRY CONSOLE</div>
+    </div>
+  </div>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="live">LIVE</button>
+    <button class="tab"        data-tab="config">CONFIG</button>
+    <button class="tab"        data-tab="diag">DIAG</button>
+  </nav>
+
+  <div class="hud-info">
+    <span id="link-status" class="badge offline">LINK OFFLINE</span>
+    <span id="clock" class="clock">00:00:00</span>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!--                          LIVE TAB                             -->
+<!-- ============================================================ -->
+<section class="tab-panel active" data-panel="live">
+
+  <div class="live-grid">
+
+    <!-- LCD MIRRORS -->
+    <div class="block">
+      <h2 class="block-title">LCD MIRRORS</h2>
+      <div id="preview-grid" class="preview-grid"></div>
+    </div>
+
+    <!-- TELEMETRY -->
+    <div class="block">
+      <h2 class="block-title">TELEMETRY</h2>
+
+      <div class="telemetry-grid">
+
+        <div class="sub">
+          <h3>ATTITUDE</h3>
+          <div class="row"><label>PITCH</label><span id="v-pitch" class="val">--</span><span class="unit">°</span></div>
+          <div class="row"><label>ROLL</label><span id="v-roll"  class="val">--</span><span class="unit">°</span></div>
+          <div class="row"><label>YAW</label><span  id="v-yaw"   class="val">--</span><span class="unit">°</span></div>
+          <div class="bar"><span>P</span><div class="track"><div id="b-pitch" class="fill"></div></div></div>
+          <div class="bar"><span>R</span><div class="track"><div id="b-roll"  class="fill"></div></div></div>
+        </div>
+
+        <div class="sub">
+          <h3>FLIGHT</h3>
+          <div class="row"><label>ALT</label>    <span id="v-alt"    class="val">--</span><span class="unit">m</span></div>
+          <div class="row"><label>V/S</label>    <span id="v-vspeed" class="val">--</span><span class="unit">m/s</span></div>
+          <div class="row"><label>SPD 3D</label> <span id="v-spd3d"  class="val">--</span><span class="unit">m/s</span></div>
+          <div class="row"><label>GND</label>    <span id="v-spd"    class="val">--</span><span class="unit">m/s</span></div>
+        </div>
+
+        <div class="sub">
+          <h3>GPS / NAV</h3>
+          <div class="row"><label>LAT</label>    <span id="v-lat"    class="val small">--</span></div>
+          <div class="row"><label>LON</label>    <span id="v-lon"    class="val small">--</span></div>
+          <div class="row"><label>SATS</label>   <span id="v-sats"   class="val">--</span></div>
+          <div class="row"><label>COURSE</label> <span id="v-course" class="val">--</span><span class="unit">°</span></div>
+          <div class="row"><label>HOME D</label> <span id="v-homed"  class="val">--</span><span class="unit">m</span></div>
+          <div class="row"><label>HOME B</label> <span id="v-homeb"  class="val">--</span><span class="unit">°</span></div>
+        </div>
+
+        <div class="sub">
+          <h3>POWER</h3>
+          <div class="row"><label>VBAT</label>    <span id="v-vbat"    class="val">--</span><span class="unit">V</span></div>
+          <div class="row"><label>CURRENT</label> <span id="v-current" class="val">--</span><span class="unit">A</span></div>
+          <div class="row"><label>THROTTLE</label><span id="v-thr"     class="val">--</span></div>
+          <div class="row"><label>RSSI</label>    <span id="v-rssi"    class="val">--</span></div>
+          <div class="bar"><span>BAT</span><div class="track"><div id="b-vbat" class="fill power"></div></div></div>
+          <div class="bar"><span>THR</span><div class="track"><div id="b-thr"  class="fill"></div></div></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!--                         CONFIG TAB                            -->
+<!-- ============================================================ -->
+<section class="tab-panel" data-panel="config">
+
+  <div class="config-grid">
+
+    <!-- FC LINK -->
+    <div class="block">
+      <h2 class="block-title">FC LINK</h2>
+      <p class="hint">Configure flight controller serial link.</p>
+
+      <div class="form">
+        <div class="form-row">
+          <label>PORT</label>
+          <div class="port-row">
+            <select id="fc-port"></select>
+            <button id="btn-rescan" class="btn-sm">SCAN</button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label>BAUD</label>
+          <select id="fc-baud">
+            <option>9600</option>
+            <option>19200</option>
+            <option>38400</option>
+            <option>57600</option>
+            <option selected>115200</option>
+            <option>230400</option>
+            <option>460800</option>
+            <option>921600</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label>PROTO</label>
+          <select id="fc-proto">
+            <option value="auto" selected>AUTO DETECT</option>
+            <option value="msp">MSP (iNAV / Betaflight)</option>
+            <option value="mavlink">MAVLINK (ArduPilot)</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label></label>
+          <button id="btn-fc-test" class="btn">TEST LINK</button>
+        </div>
+      </div>
+
+      <pre id="fc-test-out" class="codeblock" hidden></pre>
+    </div>
+
+    <!-- DISPLAY ASSIGNMENT -->
+    <div class="block">
+      <h2 class="block-title">DISPLAY ASSIGNMENT</h2>
+      <p class="hint">Map each physical slot to a render module.</p>
+      <div id="config-rows" class="form"></div>
+    </div>
+
+    <!-- APPLY -->
+    <div class="block apply-block">
+      <h2 class="block-title">APPLY</h2>
+      <p class="hint">Save all changes above and restart the process automatically.</p>
+      <div class="apply-actions">
+        <button id="btn-apply" class="btn primary">APPLY &amp; RESTART</button>
+        <span id="apply-status" class="status-text"></span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!--                          DIAG TAB                             -->
+<!-- ============================================================ -->
+<section class="tab-panel" data-panel="diag">
+
+  <div class="diag-grid">
+
+    <div class="block">
+      <h2 class="block-title">SYSTEM STATUS</h2>
+      <div id="diag-status" class="form"></div>
+    </div>
+
+    <div class="block">
+      <h2 class="block-title">PORT SCAN</h2>
+      <div class="apply-actions" style="margin-bottom:8px;">
+        <button id="btn-scan-diag" class="btn-sm">RESCAN</button>
+      </div>
+      <pre id="diag-ports" class="codeblock"></pre>
+    </div>
+
+    <div class="block block-wide">
+      <h2 class="block-title">RAW TELEMETRY (LIVE)</h2>
+      <pre id="raw-json" class="codeblock big"></pre>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<footer class="footbar">
+  <span>OPEN COCKPIT // <span id="poll-info">--</span></span>
+</footer>
+
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

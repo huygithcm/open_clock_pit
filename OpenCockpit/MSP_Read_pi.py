@@ -5,34 +5,65 @@ import math
 import threading
 import os
 import glob
+import json
 from typing import Optional, Tuple
 
 data_lock = threading.Lock()
 
 # ---------------------------- Base Configuration ----------------------------------------
 
+def _load_fc_config_from_file() -> dict:
+    """Read 'fc' block from config.json next to this file (written by web UI)."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.json")
+    if not os.path.exists(path):
+        return {}
+    try:
+        with open(path) as f:
+            return (json.load(f) or {}).get("fc") or {}
+    except Exception:
+        return {}
+
+
+_FC_CFG = _load_fc_config_from_file()
+
+
 # Set serial port and baudrate
 def _pick_default_port() -> str:
-    # 1) Allow explicit override
+    # 1) Explicit env override
     env_port = os.environ.get("MSP_PORT")
     if env_port:
         return env_port
 
-    # 2) Prefer stable USB CDC path when present (e.g., Flight Controller on USB)
+    # 2) Web UI config (config.json)
+    cfg_port = _FC_CFG.get("port")
+    if cfg_port:
+        return cfg_port
+
+    # 3) Prefer stable USB CDC path when present (e.g., FC on USB)
     by_id = sorted(glob.glob("/dev/serial/by-id/*"))
     if by_id:
         return by_id[0]
 
-    # 3) Common USB CDC node
+    # 4) Common USB CDC node
     if os.path.exists("/dev/ttyACM0"):
         return "/dev/ttyACM0"
 
-    # 4) Fallback to primary UART on GPIO
+    # 5) Fallback to primary UART on GPIO
     return "/dev/serial0"
 
 
 PORT = _pick_default_port()
-BAUDRATE = 115200
+try:
+    BAUDRATE = int(_FC_CFG.get("baudrate") or os.environ.get("MSP_BAUD") or 115200)
+except (TypeError, ValueError):
+    BAUDRATE = 115200
+
+# Protocol forced by web UI (auto/msp/mavlink). Env still wins.
+_cfg_proto = (_FC_CFG.get("protocol") or "").lower()
+if _cfg_proto in {"msp", "mavlink"} and "MSP_PROTOCOL" not in os.environ:
+    os.environ["MSP_PROTOCOL"] = _cfg_proto
+
+print(f"[FC] port={PORT} baud={BAUDRATE} protocol={_cfg_proto or 'auto'}")
 
 
 def _resolve_port(preferred_port: str) -> str:
