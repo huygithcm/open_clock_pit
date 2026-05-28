@@ -69,14 +69,31 @@ _kill_previous_instances()
 
 # 모듈 임포트
 import MSP_Read_pi
-import HUD_pi_114
-import HUD_pi_085
-import MFD_pi_096
-import MAP_pi_096
-import INFO_pi_096
 
 import adafruit_rgb_display.st7735 as ST7735
 import adafruit_rgb_display.st7789 as ST7789
+
+# Lazy load display modules to reduce initial RAM usage
+_display_modules = {}
+
+def _get_display_module(name):
+    if name not in _display_modules:
+        if name == "HUD_1.14":
+            import HUD_pi_114
+            _display_modules[name] = HUD_pi_114
+        elif name == "HUD_0.85":
+            import HUD_pi_085
+            _display_modules[name] = HUD_pi_085
+        elif name == "MFD_0.96":
+            import MFD_pi_096
+            _display_modules[name] = MFD_pi_096
+        elif name == "MAP_0.96":
+            import MAP_pi_096
+            _display_modules[name] = MAP_pi_096
+        elif name == "INFO_0.96":
+            import INFO_pi_096
+            _display_modules[name] = INFO_pi_096
+    return _display_modules.get(name)
 
 # ==========================================================
 # [Setting] Select display and module
@@ -118,14 +135,17 @@ DISPLAY_HARDWARE_MAP = {
     "Display_4": {"cs": board.D19, "dc": board.D26, "rst": board.D16}
 }
 
-# Mapping module file names to entered module names
-MODULE_MAP = {
-    "HUD_1.14": HUD_pi_114,
-    "HUD_0.85": HUD_pi_085,
-    "MFD_0.96": MFD_pi_096,
-    "MAP_0.96": MAP_pi_096,
-    "INFO_0.96" : INFO_pi_096
-}
+# Mapping module file names to entered module names (built dynamically)
+def _build_module_map():
+    return {
+        "HUD_1.14": _get_display_module("HUD_1.14"),
+        "HUD_0.85": _get_display_module("HUD_0.85"),
+        "MFD_0.96": _get_display_module("MFD_0.96"),
+        "MAP_0.96": _get_display_module("MAP_0.96"),
+        "INFO_0.96": _get_display_module("INFO_0.96")
+    }
+
+MODULE_MAP = {}
 
 # Set framerate config
 HIGH_FPS = 30
@@ -218,14 +238,32 @@ def init_display(display_id, module_obj):
     
     return disp
 
-# RGB888 to RGB565 conversion function
+# RGB888 to RGB565 conversion with buffer reuse for RAM optimization
+class ColorConverter:
+    def __init__(self):
+        self._arr_cache = {}  # Cache reshaped arrays by (height, width)
+        self._out_cache = {}  # Cache output buffers by size
+
+    def convert(self, raw, width, height):
+        key = (height, width)
+        # Reuse or allocate numpy array view
+        if key not in self._arr_cache:
+            arr = np.frombuffer(raw, dtype=np.uint8).reshape((height, width, 3))
+            self._arr_cache[key] = arr
+        else:
+            arr = self._arr_cache[key]
+
+        # Direct bit shift without intermediate arrays
+        r = (arr[:, :, 0] >> 3).astype(np.uint16)
+        g = (arr[:, :, 1] >> 2).astype(np.uint16)
+        b = (arr[:, :, 2] >> 3).astype(np.uint16)
+        rgb565 = (r << 11) | (g << 5) | b
+        return rgb565.byteswap().tobytes()
+
+_color_converter = ColorConverter()
+
 def rgb888_to_rgb565(raw, width, height):
-    arr = np.frombuffer(raw, dtype=np.uint8).reshape((height, width, 3))
-    r = (arr[:, :, 0] >> 3).astype(np.uint16)
-    g = (arr[:, :, 1] >> 2).astype(np.uint16)
-    b = (arr[:, :, 2] >> 3).astype(np.uint16)
-    rgb565 = (r << 11) | (g << 5) | b
-    return rgb565.byteswap().tobytes()
+    return _color_converter.convert(raw, width, height)
 
 # Get MSP data snapshot safely (Prevent data flow interruption in multi-threading environment)
 def get_msp_snapshot():
@@ -255,22 +293,22 @@ def display_loop(module, disp, width, height, fps):
         snap = get_msp_snapshot()
 
         # Extract fields with None fallback
-        pitch = snap["pitch"] if snap["pitch"] is not None else 0.0
-        roll  = snap["roll"]  if snap["roll"]  is not None else 0.0
-        yaw   = snap["yaw"]   if snap["yaw"]   is not None else 0.0
-        alt = snap["alt"] if snap["alt"] is not None else 0.0
-        lat = snap["lat"] if snap["lat"] is not None else 10.7769
-        lon = snap["lon"] if snap["lon"] is not None else 106.7009
-        v_speed = snap["v_speed"] if snap["v_speed"] is not None else 0.0
-        speed_3d = snap["speed_3d"] if snap["speed_3d"] is not None else 0.0
-        sats = snap["sats"] if snap["sats"] is not None else 0
-        course = snap["course"] if snap["course"] is not None else 0
-        vbat = snap["vbat"] if snap["vbat"] is not None else 0.0
-        current = snap["current"] if snap["current"] is not None else 0.0
-        rssi = snap["rssi"] if snap["rssi"] is not None else 0.0
-        throttle = snap["throttle"] if snap["throttle"] is not None else 0.0
-        home_dist = snap["home_dist"] if snap["home_dist"] is not None else 0
-        home_dir = snap["home_dir"] if snap["home_dir"] is not None else 0
+        pitch = snap.get("pitch") if snap.get("pitch") is not None else 0.0
+        roll  = snap.get("roll")  if snap.get("roll")  is not None else 0.0
+        yaw   = snap.get("yaw")   if snap.get("yaw")   is not None else 0.0
+        alt = snap.get("alt") if snap.get("alt") is not None else 0.0
+        lat = snap.get("lat") if snap.get("lat") is not None else 10.7769
+        lon = snap.get("lon") if snap.get("lon") is not None else 106.7009
+        v_speed = snap.get("v_speed") if snap.get("v_speed") is not None else 0.0
+        speed_3d = snap.get("speed_3d") if snap.get("speed_3d") is not None else 0.0
+        sats = snap.get("sats") if snap.get("sats") is not None else 0
+        course = snap.get("course") if snap.get("course") is not None else 0
+        vbat = snap.get("vbat") if snap.get("vbat") is not None else 0.0
+        current = snap.get("current") if snap.get("current") is not None else 0.0
+        rssi = snap.get("rssi") if snap.get("rssi") is not None else 0.0
+        throttle = snap.get("throttle") if snap.get("throttle") is not None else 0.0
+        home_dist = snap.get("home_dist") if snap.get("home_dist") is not None else 0
+        home_dir = snap.get("home_dir") if snap.get("home_dir") is not None else 0
 
         # Call rendering function by module
         if hasattr(module, "render_hud"):
@@ -282,11 +320,11 @@ def display_loop(module, disp, width, height, fps):
         elif hasattr(module, "render_info_dynamic"):
             module.render_info_dynamic(vbat, current, rssi, throttle)
 
-        if module == HUD_pi_114 or module == HUD_pi_085:    # Flip screen vertically (enable with reflect screen) 
+        if "HUD" in mod_key or "MAP" in mod_key:    # Flip screen vertically (enable with reflect screen)
             #flipped = flip_surface_vertical(module.screen)
             #raw = pygame.image.tostring(flipped, "RGB")
             pass
-        elif module == MFD_pi_096 or module == INFO_pi_096:  # Set surface order and send to display
+        elif "MFD" in mod_key or "INFO" in mod_key:  # Set surface order and send to display
             module.screen.blit(module.background_surface, (0,0))    # bottom surface
             module.screen.blit(module.dynamic_surface, (0,0))
             module.screen.blit(module.fixed_surface, (0,0))         # top surface
@@ -300,17 +338,24 @@ def display_loop(module, disp, width, height, fps):
 
 # Run
 def main():
+    global MODULE_MAP
 
     # Start MSP reading thread
     threading.Thread(target=MSP_Read_pi.main, daemon=True).start()
 
-    # Start web UI (Flask)
-    try:
-        import web_app
-        web_app.init(MSP_Read_pi, SELECTED_DISPLAYS, list(MODULE_MAP.keys()))
-        web_app.start(host="0.0.0.0", port=5000)
-    except Exception as e:
-        print(f"[WEB] Failed to start: {e}")
+    # Build MODULE_MAP with only required modules (lazy loading)
+    required_modules = set(SELECTED_DISPLAYS.values())
+    MODULE_MAP = {name: _get_display_module(name) for name in required_modules}
+
+    # Start web UI (Flask) - optional, can be disabled via DISABLE_WEB_UI=1
+    web_app_enabled = os.environ.get("DISABLE_WEB_UI", "0") == "0"
+    if web_app_enabled:
+        try:
+            import web_app
+            web_app.init(MSP_Read_pi, SELECTED_DISPLAYS, list(MODULE_MAP.keys()))
+            web_app.start(host="0.0.0.0", port=5000)
+        except Exception as e:
+            print(f"[WEB] Failed to start: {e}")
 
     pygame.init()
     Display_thread_lists = []
@@ -323,7 +368,7 @@ def main():
         if disp_id not in DISPLAY_HARDWARE_MAP:
             print(f"Skip: {disp_id} is not defined in Hardware Map.")
             continue
-            
+
         # Get module objects
         module_obj = MODULE_MAP.get(mod_key)
         if module_obj is None:
@@ -347,14 +392,17 @@ def main():
             loop = threading.Thread(target=display_loop, args=(module_obj, disp_hw, width, height, fps), daemon=True)
             loop.start()
             Display_thread_lists.append(loop)
-            try:
-                import web_app as _w
-                _w.mark_running(disp_id)
-                _w.register_display(disp_id, module_obj)
-            except Exception:
-                pass
+
+            # Optional web UI support
+            if web_app_enabled:
+                try:
+                    import web_app as _w
+                    _w.mark_running(disp_id)
+                    _w.register_display(disp_id, module_obj)
+                except Exception:
+                    pass
             print(f"Success: {disp_id} initialized with {mod_key}")
-            
+
         except Exception as e:
             print(f"Failed to init {disp_id} ({mod_key}): {e}")
 

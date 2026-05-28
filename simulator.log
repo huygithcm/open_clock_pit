@@ -1,7 +1,7 @@
 pygame 2.6.1 (SDL 2.28.4, Python 3.13.5)
 Hello from the pygame community. https://www.pygame.org/contribute.html
-Killed previous instance PID 11399
-Killed previous instance PID 11401
+Killed previous instance PID 20538
+Killed previous instance PID 20585
 [CFG] Loaded display config from config.json: {'Display_1': 'HUD_0.85', 'Display_2': 'MAP_0.96', 'Display_3': 'MFD_0.96', 'Display_4': 'INFO_0.96'}
 MSP Simulator started (no real FC required).
 [WEB] UI listening on http://0.0.0.0:5000
@@ -13,6 +13,1044 @@ MSP Simulator started (no real FC required).
  * Running on http://127.0.0.1:5000
  * Running on http://192.168.1.83:5000
 [33mPress CTRL+C to quit[0m
-192.168.1.79 - - [28/May/2026 12:44:53] "GET / HTTP/1.1" 200 -
-192.168.1.79 - - [28/May/2026 12:44:53] "[36mGET /static/gauge-style.css HTTP/1.1[0m" 304 -
-192.168.1.79 - - [28/May/2026 12:44:53] "[36mGET /static/gauge-app.js HTTP/1.1[0m" 304 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:49] "GET / HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "[36mGET /static/gauge-style.css HTTP/1.1[0m" 304 -
+192.168.1.79 - - [28/May/2026 13:56:50] "[36mGET /static/gauge-app.js HTTP/1.1[0m" 304 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/ports HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/fc-config HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:56:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:12] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:13] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:14] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:15] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:19] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:20] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:21] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:22] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:25] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:57:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:03] "GET /api/telemetry HTTP/1.1" 200 -
+Success: Display_1 initialized with HUD_0.85
+Success: Display_2 initialized with MAP_0.96
+[SIM] ROLL:33.7 PITCH:9.8 YAW:20.1 | ALT:56.0m V:5.93m/s SPD:14.7 | VBAT:16.80V THR:1656 HOME:163m
+Success: Display_3 initialized with MFD_0.96
+Success: Display_4 initialized with INFO_0.96
+--- 4 Displays Running ---
+[SIM] ROLL:35.0 PITCH:18.0 YAW:40.3 | ALT:61.9m V:5.73m/s SPD:16.0 | VBAT:16.80V THR:1788 HOME:163m
+[SIM] ROLL:33.0 PITCH:23.4 YAW:60.5 | ALT:67.5m V:5.39m/s SPD:17.0 | VBAT:16.79V THR:1874 HOME:164m
+[SIM] ROLL:28.1 PITCH:25.0 YAW:80.7 | ALT:72.8m V:4.94m/s SPD:17.8 | VBAT:16.79V THR:1899 HOME:164m
+[SIM] ROLL:20.6 PITCH:22.6 YAW:100.8 | ALT:77.4m V:4.37m/s SPD:18.2 | VBAT:16.79V THR:1861 HOME:164m
+[SIM] ROLL:11.3 PITCH:16.5 YAW:120.9 | ALT:81.5m V:3.70m/s SPD:18.4 | VBAT:16.79V THR:1764 HOME:164m
+[SIM] ROLL:0.9 PITCH:7.8 YAW:141.1 | ALT:84.9m V:2.94m/s SPD:18.1 | VBAT:16.79V THR:1625 HOME:165m
+[SIM] ROLL:-9.6 PITCH:-2.1 YAW:161.3 | ALT:87.4m V:2.12m/s SPD:17.5 | VBAT:16.79V THR:1467 HOME:165m
+[SIM] ROLL:-19.2 PITCH:-11.8 YAW:181.6 | ALT:89.1m V:1.24m/s SPD:16.6 | VBAT:16.78V THR:1312 HOME:165m
+[SIM] ROLL:-27.1 PITCH:-19.5 YAW:201.7 | ALT:89.9m V:0.35m/s SPD:15.5 | VBAT:16.78V THR:1189 HOME:165m
+[SIM] ROLL:-32.4 PITCH:-24.1 YAW:221.9 | ALT:89.8m V:-0.56m/s SPD:14.2 | VBAT:16.78V THR:1116 HOME:166m
+[SIM] ROLL:-34.9 PITCH:-24.8 YAW:242.0 | ALT:88.8m V:-1.45m/s SPD:12.8 | VBAT:16.78V THR:1104 HOME:166m
+[SIM] ROLL:-34.2 PITCH:-21.6 YAW:262.2 | ALT:86.9m V:-2.31m/s SPD:11.4 | VBAT:16.78V THR:1156 HOME:166m
+[SIM] ROLL:-30.3 PITCH:-14.9 YAW:282.3 | ALT:84.2m V:-3.12m/s SPD:10.2 | VBAT:16.78V THR:1262 HOME:166m
+[SIM] ROLL:-23.7 PITCH:-5.8 YAW:302.5 | ALT:80.6m V:-3.86m/s SPD:9.3 | VBAT:16.77V THR:1408 HOME:166m
+[SIM] ROLL:-15.0 PITCH:4.2 YAW:322.7 | ALT:76.4m V:-4.50m/s SPD:8.6 | VBAT:16.77V THR:1567 HOME:166m
+[SIM] ROLL:-4.9 PITCH:13.6 YAW:342.9 | ALT:71.6m V:-5.05m/s SPD:8.3 | VBAT:16.77V THR:1717 HOME:166m
+[SIM] ROLL:5.7 PITCH:20.7 YAW:3.1 | ALT:66.3m V:-5.48m/s SPD:8.2 | VBAT:16.77V THR:1831 HOME:166m
+[SIM] ROLL:15.7 PITCH:24.6 YAW:23.2 | ALT:60.6m V:-5.79m/s SPD:8.3 | VBAT:16.77V THR:1892 HOME:166m
+[SIM] ROLL:24.3 PITCH:24.4 YAW:43.3 | ALT:54.7m V:-5.96m/s SPD:8.7 | VBAT:16.77V THR:1890 HOME:166m
+[SIM] ROLL:30.7 PITCH:20.4 YAW:63.5 | ALT:48.6m V:-6.00m/s SPD:9.2 | VBAT:16.76V THR:1826 HOME:166m
+[SIM] ROLL:34.3 PITCH:13.1 YAW:83.6 | ALT:42.6m V:-5.90m/s SPD:9.9 | VBAT:16.76V THR:1710 HOME:165m
+[SIM] ROLL:34.8 PITCH:3.7 YAW:103.7 | ALT:36.8m V:-5.66m/s SPD:10.8 | VBAT:16.76V THR:1559 HOME:165m
+[SIM] ROLL:32.2 PITCH:-6.3 YAW:123.9 | ALT:31.3m V:-5.30m/s SPD:11.9 | VBAT:16.76V THR:1400 HOME:165m
+[SIM] ROLL:26.6 PITCH:-15.2 YAW:144.0 | ALT:26.2m V:-4.82m/s SPD:13.0 | VBAT:16.76V THR:1257 HOME:164m
+[SIM] ROLL:18.7 PITCH:-21.8 YAW:164.1 | ALT:21.6m V:-4.23m/s SPD:14.2 | VBAT:16.76V THR:1152 HOME:164m
+[SIM] ROLL:9.0 PITCH:-24.9 YAW:184.3 | ALT:17.7m V:-3.53m/s SPD:15.4 | VBAT:16.75V THR:1103 HOME:164m
+[SIM] ROLL:-1.5 PITCH:-23.9 YAW:204.4 | ALT:14.5m V:-2.77m/s SPD:16.4 | VBAT:16.75V THR:1118 HOME:164m
+[SIM] ROLL:-11.8 PITCH:-19.2 YAW:224.5 | ALT:12.1m V:-1.94m/s SPD:17.2 | VBAT:16.75V THR:1193 HOME:163m
+[SIM] ROLL:-21.1 PITCH:-11.4 YAW:244.7 | ALT:10.6m V:-1.06m/s SPD:17.8 | VBAT:16.75V THR:1319 HOME:163m
+[SIM] ROLL:-28.5 PITCH:-1.7 YAW:265.0 | ALT:10.0m V:-0.15m/s SPD:18.0 | VBAT:16.75V THR:1474 HOME:163m
+[SIM] ROLL:-33.3 PITCH:8.3 YAW:285.2 | ALT:10.3m V:0.76m/s SPD:17.9 | VBAT:16.75V THR:1632 HOME:163m
+[SIM] ROLL:-35.0 PITCH:16.9 YAW:305.3 | ALT:11.5m V:1.64m/s SPD:17.4 | VBAT:16.74V THR:1769 HOME:163m
+[SIM] ROLL:-33.6 PITCH:22.8 YAW:325.5 | ALT:13.6m V:2.50m/s SPD:16.7 | VBAT:16.74V THR:1864 HOME:164m
+[SIM] ROLL:-29.1 PITCH:25.0 YAW:345.6 | ALT:16.5m V:3.29m/s SPD:15.8 | VBAT:16.74V THR:1899 HOME:164m
+[SIM] ROLL:-22.0 PITCH:23.2 YAW:5.8 | ALT:20.2m V:4.00m/s SPD:14.6 | VBAT:16.74V THR:1871 HOME:164m
+[SIM] ROLL:-12.9 PITCH:17.7 YAW:26.0 | ALT:24.6m V:4.63m/s SPD:13.4 | VBAT:16.74V THR:1783 HOME:164m
+[SIM] ROLL:-2.6 PITCH:9.4 YAW:46.1 | ALT:29.5m V:5.15m/s SPD:12.2 | VBAT:16.74V THR:1650 HOME:165m
+[SIM] ROLL:7.9 PITCH:-0.4 YAW:66.2 | ALT:34.9m V:5.56m/s SPD:11.1 | VBAT:16.73V THR:1494 HOME:165m
+[SIM] ROLL:17.7 PITCH:-10.2 YAW:86.3 | ALT:40.7m V:5.83m/s SPD:10.2 | VBAT:16.73V THR:1338 HOME:165m
+[SIM] ROLL:25.9 PITCH:-18.3 YAW:106.5 | ALT:46.6m V:5.98m/s SPD:9.4 | VBAT:16.73V THR:1207 HOME:165m
+[SIM] ROLL:31.7 PITCH:-23.5 YAW:126.6 | ALT:52.6m V:5.99m/s SPD:8.8 | VBAT:16.73V THR:1124 HOME:166m
+[SIM] ROLL:34.7 PITCH:-25.0 YAW:146.7 | ALT:58.6m V:5.86m/s SPD:8.4 | VBAT:16.73V THR:1101 HOME:166m
+[SIM] ROLL:34.5 PITCH:-22.4 YAW:167.0 | ALT:64.4m V:5.60m/s SPD:8.2 | VBAT:16.73V THR:1142 HOME:166m
+[SIM] ROLL:31.2 PITCH:-16.2 YAW:187.1 | ALT:69.9m V:5.21m/s SPD:8.2 | VBAT:16.72V THR:1241 HOME:166m
+[SIM] ROLL:25.1 PITCH:-7.5 YAW:207.3 | ALT:74.9m V:4.70m/s SPD:8.5 | VBAT:16.72V THR:1381 HOME:166m
+[SIM] ROLL:16.7 PITCH:2.5 YAW:227.5 | ALT:79.3m V:4.08m/s SPD:9.0 | VBAT:16.72V THR:1539 HOME:166m
+[SIM] ROLL:6.6 PITCH:12.2 YAW:247.9 | ALT:83.1m V:3.36m/s SPD:9.9 | VBAT:16.72V THR:1694 HOME:166m
+[SIM] ROLL:-4.0 PITCH:19.8 YAW:268.1 | ALT:86.1m V:2.57m/s SPD:11.0 | VBAT:16.72V THR:1816 HOME:166m
+[SIM] ROLL:-14.1 PITCH:24.2 YAW:288.2 | ALT:88.3m V:1.73m/s SPD:12.3 | VBAT:16.72V THR:1887 HOME:166m
+[SIM] ROLL:-23.0 PITCH:24.7 YAW:308.4 | ALT:89.6m V:0.84m/s SPD:13.7 | VBAT:16.71V THR:1895 HOME:166m
+[SIM] ROLL:-29.8 PITCH:21.3 YAW:328.5 | ALT:90.0m V:-0.06m/s SPD:15.1 | VBAT:16.71V THR:1841 HOME:166m
+[SIM] ROLL:-33.9 PITCH:14.5 YAW:348.6 | ALT:89.5m V:-0.96m/s SPD:16.3 | VBAT:16.71V THR:1732 HOME:165m
+[SIM] ROLL:-34.9 PITCH:5.3 YAW:8.9 | ALT:88.1m V:-1.84m/s SPD:17.3 | VBAT:16.71V THR:1584 HOME:165m
+[SIM] ROLL:-32.8 PITCH:-4.7 YAW:29.0 | ALT:85.8m V:-2.68m/s SPD:18.0 | VBAT:16.71V THR:1426 HOME:165m
+[SIM] ROLL:-27.7 PITCH:-13.9 YAW:49.1 | ALT:82.7m V:-3.46m/s SPD:18.3 | VBAT:16.71V THR:1277 HOME:164m
+[SIM] ROLL:-20.1 PITCH:-21.0 YAW:69.2 | ALT:78.8m V:-4.16m/s SPD:18.3 | VBAT:16.70V THR:1165 HOME:164m
+[SIM] ROLL:-10.6 PITCH:-24.6 YAW:89.4 | ALT:74.3m V:-4.76m/s SPD:18.0 | VBAT:16.70V THR:1107 HOME:164m
+[SIM] ROLL:-0.2 PITCH:-24.3 YAW:109.5 | ALT:69.3m V:-5.26m/s SPD:17.3 | VBAT:16.70V THR:1111 HOME:164m
+[SIM] ROLL:10.2 PITCH:-20.2 YAW:129.6 | ALT:63.8m V:-5.63m/s SPD:16.3 | VBAT:16.70V THR:1178 HOME:164m
+[SIM] ROLL:19.7 PITCH:-12.8 YAW:149.8 | ALT:58.0m V:-5.88m/s SPD:15.2 | VBAT:16.70V THR:1296 HOME:163m
+[SIM] ROLL:27.4 PITCH:-3.4 YAW:169.9 | ALT:52.0m V:-5.99m/s SPD:13.9 | VBAT:16.70V THR:1446 HOME:163m
+[SIM] ROLL:32.6 PITCH:6.6 YAW:190.0 | ALT:46.0m V:-5.97m/s SPD:12.5 | VBAT:16.69V THR:1605 HOME:163m
+[SIM] ROLL:34.9 PITCH:15.5 YAW:210.2 | ALT:40.0m V:-5.81m/s SPD:11.2 | VBAT:16.69V THR:1748 HOME:163m
+[SIM] ROLL:34.0 PITCH:22.0 YAW:230.3 | ALT:34.3m V:-5.52m/s SPD:9.9 | VBAT:16.69V THR:1851 HOME:164m
+[SIM] ROLL:30.1 PITCH:24.9 YAW:250.4 | ALT:29.0m V:-5.10m/s SPD:8.8 | VBAT:16.69V THR:1898 HOME:164m
+[SIM] ROLL:23.4 PITCH:23.8 YAW:270.5 | ALT:24.1m V:-4.57m/s SPD:7.9 | VBAT:16.69V THR:1881 HOME:164m
+[SIM] ROLL:14.6 PITCH:18.9 YAW:290.7 | ALT:19.8m V:-3.93m/s SPD:7.2 | VBAT:16.69V THR:1803 HOME:164m
+[SIM] ROLL:4.5 PITCH:11.0 YAW:310.9 | ALT:16.2m V:-3.21m/s SPD:6.8 | VBAT:16.68V THR:1676 HOME:164m
+[SIM] ROLL:-6.1 PITCH:1.3 YAW:331.1 | ALT:13.4m V:-2.41m/s SPD:6.8 | VBAT:16.68V THR:1521 HOME:165m
+[SIM] ROLL:-16.1 PITCH:-8.6 YAW:351.2 | ALT:11.4m V:-1.55m/s SPD:7.3 | VBAT:16.68V THR:1363 HOME:165m
+[SIM] ROLL:-24.6 PITCH:-17.1 YAW:11.3 | ALT:10.2m V:-0.66m/s SPD:8.1 | VBAT:16.68V THR:1227 HOME:165m
+[SIM] ROLL:-30.9 PITCH:-22.9 YAW:31.5 | ALT:10.0m V:0.24m/s SPD:9.4 | VBAT:16.68V THR:1135 HOME:166m
+[SIM] ROLL:-34.4 PITCH:-25.0 YAW:51.6 | ALT:10.7m V:1.14m/s SPD:10.8 | VBAT:16.68V THR:1101 HOME:166m
+[SIM] ROLL:-34.8 PITCH:-23.1 YAW:71.7 | ALT:12.3m V:2.01m/s SPD:12.4 | VBAT:16.67V THR:1130 HOME:166m
+[SIM] ROLL:-32.0 PITCH:-17.6 YAW:91.8 | ALT:14.8m V:2.84m/s SPD:14.1 | VBAT:16.67V THR:1219 HOME:166m
+[SIM] ROLL:-26.4 PITCH:-9.2 YAW:112.0 | ALT:18.0m V:3.60m/s SPD:15.6 | VBAT:16.67V THR:1353 HOME:166m
+[SIM] ROLL:-18.3 PITCH:0.6 YAW:132.1 | ALT:22.0m V:4.28m/s SPD:16.9 | VBAT:16.67V THR:1510 HOME:166m
+[SIM] ROLL:-8.6 PITCH:10.4 YAW:152.3 | ALT:26.6m V:4.87m/s SPD:17.9 | VBAT:16.67V THR:1666 HOME:166m192.168.1.79 - - [28/May/2026 13:58:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:58:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:12] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:12] "POST /api/port/test HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:19] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:19] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:19] "POST /api/port/test HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:19] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:22] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:22] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:22] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:23] "GET /api/ports HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:25] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:25] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:25] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:25] "GET /api/telemetry HTTP/1.1" 200 -
+
+[SIM] ROLL:1.9 PITCH:18.5 YAW:172.5 | ALT:31.8m V:5.34m/s SPD:18.6 | VBAT:16.67V THR:1796 HOME:166m
+[SIM] ROLL:12.3 PITCH:23.6 YAW:192.8 | ALT:37.4m V:5.69m/s SPD:18.9 | VBAT:16.66V THR:1878 HOME:166m
+[SIM] ROLL:21.5 PITCH:24.9 YAW:213.0 | ALT:43.3m V:5.91m/s SPD:18.8 | VBAT:16.66V THR:1898 HOME:166m
+[SIM] ROLL:28.9 PITCH:22.1 YAW:233.5 | ALT:49.4m V:6.00m/s SPD:18.3 | VBAT:16.66V THR:1854 HOME:166m
+[SIM] ROLL:33.5 PITCH:15.7 YAW:254.0 | ALT:55.5m V:5.94m/s SPD:17.4 | VBAT:16.66V THR:1750 HOME:165m
+[SIM] ROLL:35.0 PITCH:6.8 YAW:274.1 | ALT:61.4m V:5.75m/s SPD:16.3 | VBAT:16.66V THR:1608 HOME:165m
+[SIM] ROLL:33.3 PITCH:-3.2 YAW:294.3 | ALT:67.1m V:5.43m/s SPD:14.9 | VBAT:16.66V THR:1449 HOME:165m
+[SIM] ROLL:28.6 PITCH:-12.7 YAW:314.5 | ALT:72.3m V:4.98m/s SPD:13.3 | VBAT:16.65V THR:1297 HOME:164m
+[SIM] ROLL:21.3 PITCH:-20.1 YAW:334.6 | ALT:77.1m V:4.42m/s SPD:11.7 | VBAT:16.65V THR:1179 HOME:164m
+[SIM] ROLL:12.1 PITCH:-24.3 YAW:354.7 | ALT:81.2m V:3.76m/s SPD:10.1 | VBAT:16.65V THR:1111 HOME:164m
+[SIM] ROLL:1.8 PITCH:-24.6 YAW:14.9 | ALT:84.6m V:3.01m/s SPD:8.7 | VBAT:16.65V THR:1106 HOME:164m
+[SIM] ROLL:-8.7 PITCH:-21.0 YAW:35.0 | ALT:87.2m V:2.20m/s SPD:7.5 | VBAT:16.65V THR:1164 HOME:164m
+[SIM] ROLL:-18.4 PITCH:-14.0 YAW:55.2 | ALT:89.0m V:1.33m/s SPD:6.5 | VBAT:16.65V THR:1277 HOME:163m
+[SIM] ROLL:-26.5 PITCH:-4.7 YAW:75.6 | ALT:89.9m V:0.42m/s SPD:6.1 | VBAT:16.64V THR:1426 HOME:163m
+[SIM] ROLL:-32.1 PITCH:5.3 YAW:95.7 | ALT:89.9m V:-0.48m/s SPD:6.1 | VBAT:16.64V THR:1585 HOME:163m
+[SIM] ROLL:-34.8 PITCH:14.6 YAW:116.1 | ALT:88.9m V:-1.39m/s SPD:6.6 | VBAT:16.64V THR:1733 HOME:163m
+[SIM] ROLL:-34.3 PITCH:21.4 YAW:136.2 | ALT:87.1m V:-2.25m/s SPD:7.5 | VBAT:16.64V THR:1841 HOME:164m
+[SIM] ROLL:-30.6 PITCH:24.8 YAW:156.7 | ALT:84.4m V:-3.07m/s SPD:8.8 | VBAT:16.64V THR:1896 HOME:164m
+[SIM] ROLL:-24.2 PITCH:24.1 YAW:176.9 | ALT:80.9m V:-3.82m/s SPD:10.3 | VBAT:16.64V THR:1885 HOME:164m
+[SIM] ROLL:-15.5 PITCH:19.6 YAW:197.0 | ALT:76.7m V:-4.47m/s SPD:11.9 | VBAT:16.63V THR:1813 HOME:164m
+[SIM] ROLL:-5.5 PITCH:11.9 YAW:217.2 | ALT:71.9m V:-5.02m/s SPD:13.5 | VBAT:16.63V THR:1690 HOME:164m
+[SIM] ROLL:5.0 PITCH:2.4 YAW:237.3 | ALT:66.6m V:-5.46m/s SPD:15.0 | VBAT:16.63V THR:1537 HOME:165m
+[SIM] ROLL:15.1 PITCH:-7.6 YAW:257.4 | ALT:61.0m V:-5.77m/s SPD:16.4 | VBAT:16.63V THR:1379 HOME:165m
+[SIM] ROLL:23.8 PITCH:-16.3 YAW:277.6 | ALT:55.0m V:-5.95m/s SPD:17.5 | VBAT:16.63V THR:1240 HOME:165m
+[SIM] ROLL:30.4 PITCH:-22.4 YAW:297.8 | ALT:49.0m V:-6.00m/s SPD:18.3 | VBAT:16.63V THR:1141 HOME:166m
+[SIM] ROLL:34.2 PITCH:-25.0 YAW:317.9 | ALT:43.0m V:-5.91m/s SPD:18.8 | VBAT:16.62V THR:1101 HOME:166m
+[SIM] ROLL:34.9 PITCH:-23.5 YAW:338.0 | ALT:37.2m V:-5.68m/s SPD:18.9 | VBAT:16.62V THR:1124 HOME:166m
+[SIM] ROLL:32.4 PITCH:-18.3 YAW:358.1 | ALT:31.6m V:-5.33m/s SPD:18.6 | VBAT:16.62V THR:1208 HOME:166m
+[SIM] ROLL:27.1 PITCH:-10.2 YAW:18.2 | ALT:26.5m V:-4.85m/s SPD:17.9 | VBAT:16.62V THR:1338 HOME:166m
+[SIM] ROLL:19.2 PITCH:-0.4 YAW:38.4 | ALT:21.9m V:-4.27m/s SPD:16.8 | VBAT:16.62V THR:1495 HOME:166m
+[SIM] ROLL:9.6 PITCH:9.5 YAW:58.6 | ALT:17.9m V:-3.58m/s SPD:15.5 | VBAT:16.62V THR:1652 HOME:166m
+[SIM] ROLL:-0.9 PITCH:17.8 YAW:78.9 | ALT:14.7m V:-2.81m/s SPD:14.0 | VBAT:16.61V THR:1785 HOME:166m
+[SIM] ROLL:-11.3 PITCH:23.3 YAW:99.1 | ALT:12.2m V:-1.98m/s SPD:12.4 | VBAT:16.61V THR:1872 HOME:166m
+[SIM] ROLL:-20.7 PITCH:25.0 YAW:119.3 | ALT:10.7m V:-1.10m/s SPD:10.8 | VBAT:16.61V THR:1899 HOME:166m
+[SIM] ROLL:-28.1 PITCH:22.7 YAW:139.4 | ALT:10.0m V:-0.20m/s SPD:9.3 | VBAT:16.61V THR:1862 HOME:166m
+[SIM] ROLL:-33.1 PITCH:16.7 YAW:159.6 | ALT:10.3m V:0.71m/s SPD:8.1 | VBAT:16.61V THR:1767 HOME:165m
+[SIM] ROLL:-35.0 PITCH:8.1 YAW:179.8 | ALT:11.4m V:1.60m/s SPD:7.2 | VBAT:16.61V THR:1629 HOME:165m
+[SIM] ROLL:-33.7 PITCH:-1.8 YAW:199.9 | ALT:13.5m V:2.45m/s SPD:6.8 | VBAT:16.60V THR:1471 HOME:165m
+[SIM] ROLL:-29.4 PITCH:-11.5 YAW:220.2 | ALT:16.4m V:3.25m/s SPD:6.8 | VBAT:16.60V THR:1316 HOME:164m
+[SIM] ROLL:-22.3 PITCH:-19.4 YAW:240.5 | ALT:20.1m V:3.98m/s SPD:7.3 | VBAT:16.60V THR:1191 HOME:164m
+[SIM] ROLL:-13.2 PITCH:-24.0 YAW:260.8 | ALT:24.4m V:4.61m/s SPD:8.0 | VBAT:16.60V THR:1116 HOME:164m
+[SIM] ROLL:-3.0 PITCH:-24.8 YAW:280.9 | ALT:29.3m V:5.14m/s SPD:8.9 | VBAT:16.60V THR:1104 HOME:164m
+[SIM] ROLL:7.5 PITCH:-21.6 YAW:301.0 | ALT:34.7m V:5.54m/s SPD:10.0 | VBAT:16.59V THR:1154 HOME:164m
+[SIM] ROLL:17.3 PITCH:-15.0 YAW:321.2 | ALT:40.5m V:5.83m/s SPD:11.3 | VBAT:16.59V THR:1261 HOME:163m
+[SIM] ROLL:25.7 PITCH:-5.7 YAW:341.7 | ALT:46.5m V:5.98m/s SPD:12.6 | VBAT:16.59V THR:1409 HOME:163m
+[SIM] ROLL:31.6 PITCH:4.3 YAW:1.8 | ALT:52.6m V:5.99m/s SPD:14.0 | VBAT:16.59V THR:1568 HOME:163m
+[SIM] ROLL:34.7 PITCH:13.6 YAW:22.0 | ALT:58.5m V:5.86m/s SPD:15.3 | VBAT:16.59V THR:1717 HOME:163m
+[SIM] ROLL:34.5 PITCH:20.7 YAW:42.1 | ALT:64.3m V:5.60m/s SPD:16.4 | VBAT:16.59V THR:1831 HOME:164m
+[SIM] ROLL:31.3 PITCH:24.5 YAW:62.2 | ALT:69.8m V:5.22m/s SPD:17.4 | VBAT:16.58V THR:1892 HOME:164m
+[SIM] ROLL:25.2 PITCH:24.4 YAW:82.4 | ALT:74.8m V:4.71m/s SPD:18.0 | VBAT:16.58V THR:1891 HOME:164m
+[SIM] ROLL:16.8 PITCH:20.4 YAW:102.6 | ALT:79.2m V:4.09m/s SPD:18.3 | VBAT:16.58V THR:1826 HOME:164m
+[SIM] ROLL:6.9 PITCH:13.1 YAW:122.8 | ALT:83.0m V:3.39m/s SPD:18.3 | VBAT:16.58V THR:1709 HOME:164m
+[SIM] ROLL:-3.6 PITCH:3.7 YAW:142.9 | ALT:86.0m V:2.60m/s SPD:17.9 | VBAT:16.58V THR:1559 HOME:165m
+[SIM] ROLL:-13.8 PITCH:-6.3 YAW:163.0 | ALT:88.2m V:1.76m/s SPD:17.2 | VBAT:16.58V THR:1400 HOME:165m
+[SIM] ROLL:-22.7 PITCH:-15.2 YAW:183.1 | ALT:89.6m V:0.88m/s SPD:16.2 | VBAT:16.57V THR:1257 HOME:165m
+[SIM] ROLL:-29.6 PITCH:-21.8 YAW:203.2 | ALT:90.0m V:-0.02m/s SPD:15.0 | VBAT:16.57V THR:1152 HOME:166m
+[SIM] ROLL:-33.8 PITCH:-24.9 YAW:223.5 | ALT:89.5m V:-0.93m/s SPD:13.6 | VBAT:16.57V THR:1103 HOME:166m
+[SIM] ROLL:-35.0 PITCH:-23.9 YAW:243.7 | ALT:88.1m V:-1.82m/s SPD:12.2 | VBAT:16.57V THR:1118 HOME:166m
+[SIM] ROLL:-32.9 PITCH:-19.1 YAW:263.9 | ALT:85.9m V:-2.66m/s SPD:10.9 | VBAT:16.57V THR:1195 HOME:166m
+[SIM] ROLL:-27.8 PITCH:-11.2 YAW:284.2 | ALT:82.8m V:-3.44m/s SPD:9.8 | VBAT:16.57V THR:1321 HOME:166m
+[SIM] ROLL:-20.3 PITCH:-1.5 YAW:304.4 | ALT:78.9m V:-4.14m/s SPD:8.9 | VBAT:16.56V THR:1476 HOME:166m
+[SIM] ROLL:-10.8 PITCH:8.4 YAW:324.5 | ALT:74.4m V:-4.75m/s SPD:8.4 | VBAT:16.56V THR:1634 HOME:166m
+[SIM] ROLL:-0.4 PITCH:17.0 YAW:344.8 | ALT:69.4m V:-5.25m/s SPD:8.2 | VBAT:16.56V THR:1771 HOME:166m
+[SIM] ROLL:10.1 PITCH:22.8 YAW:5.0 | ALT:63.8m V:-5.63m/s SPD:8.2 | VBAT:16.56V THR:1865 HOME:166m
+[SIM] ROLL:19.7 PITCH:25.0 YAW:25.3 | ALT:58.0m V:-5.88m/s SPD:8.5 | VBAT:16.56V THR:1899 HOME:166m
+[SIM] ROLL:27.4 PITCH:23.1 YAW:45.5 | ALT:52.0m V:-5.99m/s SPD:8.9 | VBAT:16.56V THR:1869 HOME:166m
+[SIM] ROLL:32.7 PITCH:17.5 YAW:65.7 | ALT:45.9m V:-5.97m/s SPD:9.5 | VBAT:16.55V THR:1779 HOME:165m
+[SIM] ROLL:34.9 PITCH:9.1 YAW:86.0 | ALT:40.0m V:-5.81m/s SPD:10.3 | VBAT:16.55V THR:1645 HOME:165m
+[SIM] ROLL:34.0 PITCH:-0.9 YAW:106.2 | ALT:34.2m V:-5.51m/s SPD:11.3 | VBAT:16.55V THR:1487 HOME:165m
+[SIM] ROLL:30.0 PITCH:-10.6 YAW:126.4 | ALT:28.9m V:-5.09m/s SPD:12.4 | VBAT:16.55V THR:1331 HOME:165m
+[SIM] ROLL:23.2 PITCH:-18.7 YAW:146.6 | ALT:24.0m V:-4.56m/s SPD:13.6 | VBAT:16.55V THR:1202 HOME:164m
+[SIM] ROLL:14.3 PITCH:-23.7 YAW:166.9 | ALT:19.7m V:-3.91m/s SPD:14.8 | VBAT:16.55V THR:1121 HOME:164m
+[SIM] ROLL:4.1 PITCH:-24.9 YAW:187.1 | ALT:16.1m V:-3.18m/s SPD:15.9 | VBAT:16.54V THR:1102 HOME:164m
+[SIM] ROLL:-6.5 PITCH:-22.1 YAW:207.3 | ALT:13.3m V:-2.38m/s SPD:16.8 | VBAT:16.54V THR:1147 HOME:164m
+[SIM] ROLL:-16.5 PITCH:-15.7 YAW:227.6 | ALT:11.3m V:-1.51m/s SPD:17.5 | VBAT:16.54V THR:1249 HOME:163m
+[SIM] ROLL:-24.9 PITCH:-6.8 YAW:247.8 | ALT:10.2m V:-0.62m/s SPD:17.9 | VBAT:16.54V THR:1392 HOME:163m
+[SIM] ROLL:-31.1 PITCH:3.2 YAW:268.0 | ALT:10.0m V:0.29m/s SPD:18.0 | VBAT:16.54V THR:1551 HOME:163m
+[SIM] ROLL:-34.5 PITCH:12.7 YAW:288.2 | ALT:10.8m V:1.19m/s SPD:17.7 | VBAT:16.54V THR:1702 HOME:163m
+[SIM] ROLL:-34.7 PITCH:20.2 YAW:308.5 | ALT:12.5m V:2.07m/s SPD:17.1 | VBAT:16.53V THR:1822 HOME:164m
+[SIM] ROLL:-31.7 PITCH:24.3 YAW:328.7 | ALT:15.0m V:2.89m/s SPD:16.3 | VBAT:16.53V THR:1889 HOME:164m
+[SIM] ROLL:-25.9 PITCH:24.6 YAW:349.0 | ALT:18.3m V:3.66m/s SPD:15.2 | VBAT:16.53V THR:1893 HOME:164m192.168.1.79 - - [28/May/2026 13:59:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:46] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 13:59:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:10] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:11] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:12] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:13] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:14] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:15] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:16] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:17] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:18] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:19] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:20] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:21] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:22] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:23] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:24] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:25] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:26] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:27] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:28] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:29] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:30] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:31] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:32] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:33] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:35] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:36] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:37] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:38] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:39] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:40] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:41] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:42] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:43] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:44] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:45] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:46] "GET /api/telemetry HTTP/1.1" 200 -
+
+[SIM] ROLL:-17.6 PITCH:20.9 YAW:9.1 | ALT:22.3m V:4.33m/s SPD:14.0 | VBAT:16.53V THR:1834 HOME:164m
+[SIM] ROLL:-7.8 PITCH:13.8 YAW:29.4 | ALT:27.0m V:4.91m/s SPD:12.8 | VBAT:16.53V THR:1721 HOME:164m
+[SIM] ROLL:2.7 PITCH:4.5 YAW:49.6 | ALT:32.2m V:5.37m/s SPD:11.7 | VBAT:16.53V THR:1572 HOME:165m
+[SIM] ROLL:13.0 PITCH:-5.5 YAW:69.8 | ALT:37.8m V:5.71m/s SPD:10.6 | VBAT:16.52V THR:1413 HOME:165m
+[SIM] ROLL:22.1 PITCH:-14.6 YAW:89.9 | ALT:43.7m V:5.93m/s SPD:9.8 | VBAT:16.52V THR:1266 HOME:165m
+[SIM] ROLL:29.2 PITCH:-21.4 YAW:110.2 | ALT:49.8m V:6.00m/s SPD:9.1 | VBAT:16.52V THR:1157 HOME:166m
+[SIM] ROLL:33.6 PITCH:-24.8 YAW:130.4 | ALT:55.8m V:5.94m/s SPD:8.6 | VBAT:16.52V THR:1104 HOME:166m
+[SIM] ROLL:35.0 PITCH:-24.1 YAW:150.6 | ALT:61.7m V:5.74m/s SPD:8.3 | VBAT:16.52V THR:1115 HOME:166m
+[SIM] ROLL:33.1 PITCH:-19.5 YAW:170.9 | ALT:67.4m V:5.41m/s SPD:8.2 | VBAT:16.52V THR:1188 HOME:166m
+[SIM] ROLL:28.3 PITCH:-11.8 YAW:191.1 | ALT:72.6m V:4.95m/s SPD:8.3 | VBAT:16.51V THR:1311 HOME:166m
+[SIM] ROLL:20.8 PITCH:-2.2 YAW:211.3 | ALT:77.3m V:4.38m/s SPD:8.7 | VBAT:16.51V THR:1465 HOME:166m
+[SIM] ROLL:11.4 PITCH:7.8 YAW:231.6 | ALT:81.4m V:3.71m/s SPD:9.4 | VBAT:16.51V THR:1624 HOME:166m
+[SIM] ROLL:1.1 PITCH:16.5 YAW:251.8 | ALT:84.8m V:2.96m/s SPD:10.5 | VBAT:16.51V THR:1763 HOME:166m
+[SIM] ROLL:-9.5 PITCH:22.6 YAW:272.0 | ALT:87.4m V:2.13m/s SPD:11.7 | VBAT:16.51V THR:1861 HOME:166m
+[SIM] ROLL:-19.0 PITCH:25.0 YAW:292.2 | ALT:89.1m V:1.26m/s SPD:13.1 | VBAT:16.51V THR:1899 HOME:166m
+[SIM] ROLL:-27.0 PITCH:23.4 YAW:312.4 | ALT:89.9m V:0.36m/s SPD:14.5 | VBAT:16.50V THR:1873 HOME:166m
+[SIM] ROLL:-32.4 PITCH:18.0 YAW:332.7 | ALT:89.8m V:-0.55m/s SPD:15.8 | VBAT:16.50V THR:1787 HOME:165m
+[SIM] ROLL:-34.9 PITCH:9.7 YAW:352.9 | ALT:88.8m V:-1.44m/s SPD:16.9 | VBAT:16.50V THR:1655 HOME:165m
+[SIM] ROLL:-34.2 PITCH:-0.1 YAW:13.0 | ALT:86.9m V:-2.30m/s SPD:17.7 | VBAT:16.50V THR:1499 HOME:165m
+[SIM] ROLL:-30.3 PITCH:-10.0 YAW:33.3 | ALT:84.2m V:-3.12m/s SPD:18.2 | VBAT:16.50V THR:1341 HOME:165m
+[SIM] ROLL:-23.8 PITCH:-18.1 YAW:53.4 | ALT:80.7m V:-3.85m/s SPD:18.4 | VBAT:16.50V THR:1210 HOME:164m
+[SIM] ROLL:-15.0 PITCH:-23.4 YAW:73.6 | ALT:76.4m V:-4.50m/s SPD:18.2 | VBAT:16.49V THR:1125 HOME:164m
+[SIM] ROLL:-4.9 PITCH:-25.0 YAW:93.9 | ALT:71.6m V:-5.05m/s SPD:17.6 | VBAT:16.49V THR:1101 HOME:164m
+[SIM] ROLL:5.7 PITCH:-22.4 YAW:114.2 | ALT:66.2m V:-5.48m/s SPD:16.8 | VBAT:16.49V THR:1141 HOME:164m
+[SIM] ROLL:15.8 PITCH:-16.3 YAW:134.4 | ALT:60.5m V:-5.79m/s SPD:15.7 | VBAT:16.49V THR:1240 HOME:163m
+[SIM] ROLL:24.4 PITCH:-7.5 YAW:154.6 | ALT:54.6m V:-5.96m/s SPD:14.4 | VBAT:16.49V THR:1380 HOME:163m
+[SIM] ROLL:30.8 PITCH:2.5 YAW:175.0 | ALT:48.5m V:-6.00m/s SPD:13.1 | VBAT:16.49V THR:1540 HOME:163m
+[SIM] ROLL:34.4 PITCH:12.1 YAW:195.2 | ALT:42.5m V:-5.89m/s SPD:11.7 | VBAT:16.48V THR:1693 HOME:163m
+[SIM] ROLL:34.8 PITCH:19.8 YAW:215.5 | ALT:36.6m V:-5.65m/s SPD:10.4 | VBAT:16.48V THR:1816 HOME:164m
+[SIM] ROLL:32.0 PITCH:24.2 YAW:235.7 | ALT:31.1m V:-5.28m/s SPD:9.3 | VBAT:16.48V THR:1887 HOME:164m
+[SIM] ROLL:26.3 PITCH:24.7 YAW:256.0 | ALT:25.9m V:-4.79m/s SPD:8.3 | VBAT:16.48V THR:1895 HOME:164m
+[SIM] ROLL:18.2 PITCH:21.3 YAW:276.2 | ALT:21.4m V:-4.19m/s SPD:7.5 | VBAT:16.48V THR:1840 HOME:164m
+[SIM] ROLL:8.5 PITCH:14.3 YAW:296.4 | ALT:17.5m V:-3.50m/s SPD:6.9 | VBAT:16.48V THR:1729 HOME:164m
+[SIM] ROLL:-2.1 PITCH:5.1 YAW:316.7 | ALT:14.3m V:-2.72m/s SPD:6.8 | VBAT:16.47V THR:1581 HOME:165m
+[SIM] ROLL:-12.4 PITCH:-4.9 YAW:336.9 | ALT:12.0m V:-1.88m/s SPD:7.0 | VBAT:16.47V THR:1422 HOME:165m
+[SIM] ROLL:-21.7 PITCH:-14.2 YAW:357.2 | ALT:10.6m V:-0.99m/s SPD:7.8 | VBAT:16.47V THR:1274 HOME:165m
+[SIM] ROLL:-28.9 PITCH:-21.1 YAW:17.3 | ALT:10.0m V:-0.09m/s SPD:8.9 | VBAT:16.47V THR:1162 HOME:166m
+[SIM] ROLL:-33.4 PITCH:-24.7 YAW:37.5 | ALT:10.4m V:0.81m/s SPD:10.3 | VBAT:16.47V THR:1106 HOME:166m
+[SIM] ROLL:-35.0 PITCH:-24.3 YAW:57.8 | ALT:11.6m V:1.70m/s SPD:11.9 | VBAT:16.47V THR:1112 HOME:166m
+[SIM] ROLL:-33.4 PITCH:-19.9 YAW:77.9 | ALT:13.8m V:2.55m/s SPD:13.5 | VBAT:16.46V THR:1182 HOME:166m
+[SIM] ROLL:-28.7 PITCH:-12.4 YAW:98.2 | ALT:16.8m V:3.34m/s SPD:15.0 | VBAT:16.46V THR:1302 HOME:166m
+[SIM] ROLL:-21.4 PITCH:-2.9 YAW:118.3 | ALT:20.5m V:4.06m/s SPD:16.4 | VBAT:16.46V THR:1455 HOME:166m
+[SIM] ROLL:-12.1 PITCH:7.1 YAW:138.6 | ALT:24.9m V:4.68m/s SPD:17.6 | VBAT:16.46V THR:1614 HOME:166m
+[SIM] ROLL:-1.7 PITCH:16.0 YAW:158.8 | ALT:30.0m V:5.19m/s SPD:18.4 | VBAT:16.46V THR:1756 HOME:166m
+[SIM] ROLL:8.8 PITCH:22.3 YAW:179.0 | ALT:35.4m V:5.59m/s SPD:18.8 | VBAT:16.46V THR:1856 HOME:166m
+[SIM] ROLL:18.4 PITCH:24.9 YAW:199.1 | ALT:41.2m V:5.85m/s SPD:18.9 | VBAT:16.45V THR:1899 HOME:166m
+[SIM] ROLL:26.5 PITCH:23.6 YAW:219.2 | ALT:47.1m V:5.98m/s SPD:18.5 | VBAT:16.45V THR:1878 HOME:166m
+[SIM] ROLL:32.1 PITCH:18.6 YAW:239.3 | ALT:53.2m V:5.98m/s SPD:17.8 | VBAT:16.45V THR:1796 HOME:165m
+[SIM] ROLL:34.8 PITCH:10.5 YAW:259.5 | ALT:59.1m V:5.84m/s SPD:16.7 | VBAT:16.45V THR:1668 HOME:165m
+[SIM] ROLL:34.3 PITCH:0.7 YAW:279.8 | ALT:64.9m V:5.57m/s SPD:15.4 | VBAT:16.45V THR:1511 HOME:165m
+[SIM] ROLL:30.8 PITCH:-9.2 YAW:299.9 | ALT:70.3m V:5.17m/s SPD:13.9 | VBAT:16.45V THR:1354 HOME:165m
+[SIM] ROLL:24.4 PITCH:-17.5 YAW:320.0 | ALT:75.3m V:4.65m/s SPD:12.4 | VBAT:16.44V THR:1220 HOME:164m
+[SIM] ROLL:15.8 PITCH:-23.1 YAW:340.3 | ALT:79.7m V:4.02m/s SPD:10.7 | VBAT:16.44V THR:1130 HOME:164m
+[SIM] ROLL:5.9 PITCH:-25.0 YAW:0.3 | ALT:83.4m V:3.31m/s SPD:9.2 | VBAT:16.44V THR:1101 HOME:164m
+[SIM] ROLL:-4.7 PITCH:-22.9 YAW:20.5 | ALT:86.3m V:2.52m/s SPD:7.9 | VBAT:16.44V THR:1135 HOME:164m
+[SIM] ROLL:-14.8 PITCH:-17.1 YAW:40.6 | ALT:88.4m V:1.67m/s SPD:6.9 | VBAT:16.44V THR:1227 HOME:163m
+[SIM] ROLL:-23.5 PITCH:-8.6 YAW:60.7 | ALT:89.7m V:0.78m/s SPD:6.2 | VBAT:16.43V THR:1363 HOME:163m
+[SIM] ROLL:-30.2 PITCH:1.3 YAW:80.9 | ALT:90.0m V:-0.12m/s SPD:6.0 | VBAT:16.43V THR:1521 HOME:163m
+[SIM] ROLL:-34.1 PITCH:11.0 YAW:101.0 | ALT:89.4m V:-1.02m/s SPD:6.3 | VBAT:16.43V THR:1676 HOME:163m
+[SIM] ROLL:-34.9 PITCH:19.0 YAW:121.3 | ALT:87.9m V:-1.90m/s SPD:7.1 | VBAT:16.43V THR:1803 HOME:163m
+[SIM] ROLL:-32.6 PITCH:23.8 YAW:141.4 | ALT:85.6m V:-2.74m/s SPD:8.2 | VBAT:16.43V THR:1881 HOME:164m
+[SIM] ROLL:-27.3 PITCH:24.9 YAW:161.5 | ALT:82.5m V:-3.51m/s SPD:9.6 | VBAT:16.43V THR:1898 HOME:164m
+[SIM] ROLL:-19.5 PITCH:22.0 YAW:181.6 | ALT:78.6m V:-4.20m/s SPD:11.2 | VBAT:16.42V THR:1851 HOME:164m
+[SIM] ROLL:-10.0 PITCH:15.5 YAW:201.8 | ALT:74.0m V:-4.80m/s SPD:12.8 | VBAT:16.42V THR:1748 HOME:164m
+[SIM] ROLL:0.5 PITCH:6.6 YAW:222.0 | ALT:68.9m V:-5.29m/s SPD:14.4 | VBAT:16.42V THR:1605 HOME:165m
+[SIM] ROLL:10.9 PITCH:-3.4 YAW:242.1 | ALT:63.4m V:-5.65m/s SPD:15.8 | VBAT:16.42V THR:1446 HOME:165m
+[SIM] ROLL:20.3 PITCH:-12.8 YAW:262.2 | ALT:57.6m V:-5.89m/s SPD:17.0 | VBAT:16.42V THR:1295 HOME:165m
+[SIM] ROLL:27.9 PITCH:-20.2 YAW:282.4 | ALT:51.6m V:-6.00m/s SPD:18.0 | VBAT:16.42V THR:1177 HOME:165m
+[SIM] ROLL:32.9 PITCH:-24.4 YAW:302.5 | ALT:45.6m V:-5.96m/s SPD:18.6 | VBAT:16.41V THR:1111 HOME:166m
+[SIM] ROLL:35.0 PITCH:-24.6 YAW:322.7 | ALT:39.6m V:-5.79m/s SPD:18.9 | VBAT:16.41V THR:1107 HOME:166m
+[SIM] ROLL:33.9 PITCH:-20.9 YAW:342.8 | ALT:33.9m V:-5.49m/s SPD:18.7 | VBAT:16.41V THR:1166 HOME:166m
+[SIM] ROLL:29.7 PITCH:-13.9 YAW:2.9 | ALT:28.6m V:-5.07m/s SPD:18.2 | VBAT:16.41V THR:1278 HOME:166m
+[SIM] ROLL:22.8 PITCH:-4.7 YAW:23.0 | ALT:23.8m V:-4.53m/s SPD:17.3 | VBAT:16.41V THR:1426 HOME:166m
+[SIM] ROLL:13.9 PITCH:5.3 YAW:43.2 | ALT:19.5m V:-3.89m/s SPD:16.1 | VBAT:16.41V THR:1585 HOME:166m
+[SIM] ROLL:3.7 PITCH:14.5 YAW:63.3 | ALT:16.0m V:-3.15m/s SPD:14.7 | VBAT:16.40V THR:1731 HOME:166m
+[SIM] ROLL:-6.8 PITCH:21.3 YAW:83.4 | ALT:13.2m V:-2.35m/s SPD:13.1 | VBAT:16.40V THR:1841 HOME:166m
+[SIM] ROLL:-16.7 PITCH:24.7 YAW:103.6 | ALT:11.3m V:-1.49m/s SPD:11.5 | VBAT:16.40V THR:1895 HOME:166m
+[SIM] ROLL:-25.1 PITCH:24.2 YAW:123.7 | ALT:10.2m V:-0.60m/s SPD:9.9 | VBAT:16.40V THR:1887 HOME:166m
+[SIM] ROLL:-31.2 PITCH:19.7 YAW:143.9 | ALT:10.1m V:0.31m/s SPD:8.6 | VBAT:16.40V THR:1815 HOME:165m
+[SIM] ROLL:-34.6 PITCH:11.9 YAW:164.6 | ALT:10.8m V:1.23m/s SPD:7.5 | VBAT:16.40V THR:1690 HOME:165m
+[SIM] ROLL:-34.6 PITCH:2.4 YAW:184.7 | ALT:12.5m V:2.10m/s SPD:6.9 | VBAT:16.39V THR:1537 HOME:165m192.168.1.79 - - [28/May/2026 14:00:47] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:48] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:49] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:50] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:51] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:52] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:53] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:54] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:55] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:56] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:57] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:58] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:00:59] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:00] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:01] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:02] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:03] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:04] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:05] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:06] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:07] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:08] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:09] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:01:34] "GET /api/telemetry HTTP/1.1" 200 -
+
+[SIM] ROLL:-31.6 PITCH:-7.6 YAW:204.9 | ALT:15.1m V:2.92m/s SPD:6.8 | VBAT:16.39V THR:1379 HOME:165m
+[SIM] ROLL:-25.7 PITCH:-16.3 YAW:225.0 | ALT:18.4m V:3.67m/s SPD:7.0 | VBAT:16.39V THR:1240 HOME:164m
+[SIM] ROLL:-17.4 PITCH:-22.4 YAW:245.2 | ALT:22.4m V:4.35m/s SPD:7.6 | VBAT:16.39V THR:1142 HOME:164m
+[SIM] ROLL:-7.6 PITCH:-25.0 YAW:265.3 | ALT:27.1m V:4.92m/s SPD:8.5 | VBAT:16.39V THR:1101 HOME:164m
+[SIM] ROLL:2.9 PITCH:-23.5 YAW:285.4 | ALT:32.3m V:5.38m/s SPD:9.5 | VBAT:16.39V THR:1124 HOME:164m
+[SIM] ROLL:13.1 PITCH:-18.3 YAW:305.5 | ALT:37.9m V:5.72m/s SPD:10.7 | VBAT:16.38V THR:1208 HOME:163m
+[SIM] ROLL:22.2 PITCH:-10.2 YAW:325.6 | ALT:43.7m V:5.93m/s SPD:12.0 | VBAT:16.38V THR:1338 HOME:163m
+[SIM] ROLL:29.2 PITCH:-0.4 YAW:345.8 | ALT:49.8m V:6.00m/s SPD:13.4 | VBAT:16.38V THR:1494 HOME:163m
+[SIM] ROLL:33.6 PITCH:9.4 YAW:5.9 | ALT:55.8m V:5.94m/s SPD:14.7 | VBAT:16.38V THR:1651 HOME:163m
+[SIM] ROLL:35.0 PITCH:17.8 YAW:26.1 | ALT:61.7m V:5.74m/s SPD:15.9 | VBAT:16.38V THR:1784 HOME:163m
+[SIM] ROLL:33.2 PITCH:23.2 YAW:46.2 | ALT:67.3m V:5.41m/s SPD:17.0 | VBAT:16.38V THR:1871 HOME:164m
+[SIM] ROLL:28.4 PITCH:25.0 YAW:66.4 | ALT:72.5m V:4.96m/s SPD:17.7 | VBAT:16.37V THR:1899 HOME:164m
+[SIM] ROLL:21.0 PITCH:22.7 YAW:86.5 | ALT:77.3m V:4.39m/s SPD:18.2 | VBAT:16.37V THR:1863 HOME:164m
+[SIM] ROLL:11.7 PITCH:16.9 YAW:106.6 | ALT:81.3m V:3.73m/s SPD:18.4 | VBAT:16.37V THR:1769 HOME:164m
+[SIM] ROLL:1.3 PITCH:8.2 YAW:126.9 | ALT:84.8m V:2.97m/s SPD:18.1 | VBAT:16.37V THR:1631 HOME:165m
+[SIM] ROLL:-9.2 PITCH:-1.8 YAW:147.1 | ALT:87.3m V:2.15m/s SPD:17.6 | VBAT:16.37V THR:1472 HOME:165m
+[SIM] ROLL:-18.9 PITCH:-11.4 YAW:167.2 | ALT:89.1m V:1.28m/s SPD:16.7 | VBAT:16.37V THR:1319 HOME:165m
+[SIM] ROLL:-26.9 PITCH:-19.3 YAW:187.7 | ALT:89.9m V:0.37m/s SPD:15.5 | VBAT:16.36V THR:1192 HOME:165m
+[SIM] ROLL:-32.3 PITCH:-24.0 YAW:207.9 | ALT:89.8m V:-0.54m/s SPD:14.2 | VBAT:16.36V THR:1117 HOME:166m
+[SIM] ROLL:-34.9 PITCH:-24.8 YAW:228.1 | ALT:88.8m V:-1.43m/s SPD:12.8 | VBAT:16.36V THR:1103 HOME:166m
+[SIM] ROLL:-34.2 PITCH:-21.7 YAW:248.2 | ALT:87.0m V:-2.29m/s SPD:11.5 | VBAT:16.36V THR:1154 HOME:166m
+[SIM] ROLL:-30.5 PITCH:-15.1 YAW:268.4 | ALT:84.3m V:-3.10m/s SPD:10.2 | VBAT:16.36V THR:1259 HOME:166m
+[SIM] ROLL:-24.0 PITCH:-6.0 YAW:288.5 | ALT:80.8m V:-3.84m/s SPD:9.3 | VBAT:16.36V THR:1404 HOME:166m
+[SIM] ROLL:-15.3 PITCH:3.9 YAW:308.6 | ALT:76.6m V:-4.49m/s SPD:8.6 | VBAT:16.35V THR:1562 HOME:166m
+[SIM] ROLL:-5.2 PITCH:13.3 YAW:328.8 | ALT:71.7m V:-5.04m/s SPD:8.3 | VBAT:16.35V THR:1713 HOME:166m
+[SIM] ROLL:5.3 PITCH:20.5 YAW:348.9 | ALT:66.4m V:-5.47m/s SPD:8.2 | VBAT:16.35V THR:1828 HOME:166m
+[SIM] ROLL:15.4 PITCH:24.5 YAW:9.1 | ALT:60.8m V:-5.78m/s SPD:8.3 | VBAT:16.35V THR:1891 HOME:166m
+[SIM] ROLL:24.0 PITCH:24.5 YAW:29.2 | ALT:54.8m V:-5.96m/s SPD:8.7 | VBAT:16.35V THR:1892 HOME:166m
+[SIM] ROLL:30.5 PITCH:20.6 YAW:49.3 | ALT:48.8m V:-6.00m/s SPD:9.2 | VBAT:16.35V THR:1829 HOME:166m
+[SIM] ROLL:34.2 PITCH:13.4 YAW:69.5 | ALT:42.8m V:-5.90m/s SPD:9.9 | VBAT:16.34V THR:1714 HOME:165m
+[SIM] ROLL:34.9 PITCH:4.0 YAW:89.7 | ALT:37.0m V:-5.67m/s SPD:10.8 | VBAT:16.34V THR:1564 HOME:165m
+[SIM] ROLL:32.3 PITCH:-6.0 YAW:110.0 | ALT:31.4m V:-5.31m/s SPD:11.8 | VBAT:16.34V THR:1404 HOME:165m
+[SIM] ROLL:26.8 PITCH:-15.1 YAW:130.1 | ALT:26.3m V:-4.83m/s SPD:13.0 | VBAT:16.34V THR:1260 HOME:164m
+[SIM] ROLL:18.8 PITCH:-21.7 YAW:150.3 | ALT:21.7m V:-4.24m/s SPD:14.2 | VBAT:16.34V THR:1153 HOME:164m
+[SIM] ROLL:9.2 PITCH:-24.8 YAW:170.4 | ALT:17.8m V:-3.55m/s SPD:15.4 | VBAT:16.34V THR:1103 HOME:164m
+[SIM] ROLL:-1.2 PITCH:-24.0 YAW:190.5 | ALT:14.6m V:-2.78m/s SPD:16.4 | VBAT:16.33V THR:1117 HOME:164m
+[SIM] ROLL:-11.6 PITCH:-19.3 YAW:210.6 | ALT:12.2m V:-1.95m/s SPD:17.2 | VBAT:16.33V THR:1191 HOME:163m
+[SIM] ROLL:-20.9 PITCH:-11.6 YAW:230.8 | ALT:10.7m V:-1.08m/s SPD:17.8 | VBAT:16.33V THR:1315 HOME:163m
+[SIM] ROLL:-28.3 PITCH:-2.0 YAW:250.9 | ALT:10.0m V:-0.18m/s SPD:18.0 | VBAT:16.33V THR:1469 HOME:163m
+[SIM] ROLL:-33.1 PITCH:8.0 YAW:271.1 | ALT:10.3m V:0.73m/s SPD:17.9 | VBAT:16.33V THR:1627 HOME:163m
+[SIM] ROLL:-35.0 PITCH:16.6 YAW:291.3 | ALT:11.5m V:1.62m/s SPD:17.5 | VBAT:16.33V THR:1766 HOME:163m
+[SIM] ROLL:-33.6 PITCH:22.7 YAW:311.6 | ALT:13.6m V:2.47m/s SPD:16.7 | VBAT:16.32V THR:1862 HOME:164m
+[SIM] ROLL:-29.2 PITCH:25.0 YAW:331.7 | ALT:16.5m V:3.27m/s SPD:15.8 | VBAT:16.32V THR:1899 HOME:164m
+[SIM] ROLL:-22.1 PITCH:23.3 YAW:352.0 | ALT:20.2m V:3.99m/s SPD:14.7 | VBAT:16.32V THR:1872 HOME:164m
+[SIM] ROLL:-13.0 PITCH:17.9 YAW:12.2 | ALT:24.5m V:4.62m/s SPD:13.4 | VBAT:16.32V THR:1785 HOME:164m
+[SIM] ROLL:-2.8 PITCH:9.6 YAW:32.3 | ALT:29.4m V:5.15m/s SPD:12.3 | VBAT:16.32V THR:1653 HOME:165m
+[SIM] ROLL:7.8 PITCH:-0.3 YAW:52.6 | ALT:34.9m V:5.55m/s SPD:11.1 | VBAT:16.32V THR:1496 HOME:165m
+[SIM] ROLL:17.6 PITCH:-10.1 YAW:72.7 | ALT:40.6m V:5.83m/s SPD:10.2 | VBAT:16.31V THR:1339 HOME:165m
+[SIM] ROLL:25.8 PITCH:-18.3 YAW:92.9 | ALT:46.6m V:5.98m/s SPD:9.4 | VBAT:16.31V THR:1208 HOME:165m
+[SIM] ROLL:31.7 PITCH:-23.5 YAW:113.0 | ALT:52.6m V:5.99m/s SPD:8.8 | VBAT:16.31V THR:1125 HOME:166m
+[SIM] ROLL:34.7 PITCH:-25.0 YAW:133.0 | ALT:58.6m V:5.86m/s SPD:8.4 | VBAT:16.31V THR:1101 HOME:166m
+[SIM] ROLL:34.5 PITCH:-22.5 YAW:153.2 | ALT:64.3m V:5.60m/s SPD:8.2 | VBAT:16.31V THR:1141 HOME:166m
+[SIM] ROLL:31.3 PITCH:-16.4 YAW:173.3 | ALT:69.8m V:5.21m/s SPD:8.2 | VBAT:16.31V THR:1238 HOME:166m
+[SIM] ROLL:25.2 PITCH:-7.7 YAW:193.5 | ALT:74.8m V:4.71m/s SPD:8.5 | VBAT:16.30V THR:1378 HOME:166m
+[SIM] ROLL:16.9 PITCH:2.3 YAW:213.6 | ALT:79.2m V:4.09m/s SPD:9.0 | VBAT:16.30V THR:1536 HOME:166m
+[SIM] ROLL:6.9 PITCH:11.9 YAW:233.8 | ALT:83.0m V:3.38m/s SPD:9.9 | VBAT:16.30V THR:1690 HOME:166m
+[SIM] ROLL:-3.6 PITCH:19.6 YAW:254.0 | ALT:86.1m V:2.60m/s SPD:11.0 | VBAT:16.30V THR:1813 HOME:166m
+[SIM] ROLL:-13.9 PITCH:24.1 YAW:274.3 | ALT:88.3m V:1.75m/s SPD:12.3 | VBAT:16.30V THR:1886 HOME:166m
+[SIM] ROLL:-22.8 PITCH:24.8 YAW:294.4 | ALT:89.6m V:0.87m/s SPD:13.7 | VBAT:16.30V THR:1896 HOME:166m
+[SIM] ROLL:-29.7 PITCH:21.4 YAW:314.7 | ALT:90.0m V:-0.04m/s SPD:15.1 | VBAT:16.29V THR:1842 HOME:166m
+[SIM] ROLL:-33.9 PITCH:14.6 YAW:334.8 | ALT:89.5m V:-0.94m/s SPD:16.3 | VBAT:16.29V THR:1734 HOME:165m
+[SIM] ROLL:-35.0 PITCH:5.5 YAW:355.1 | ALT:88.1m V:-1.83m/s SPD:17.3 | VBAT:16.29V THR:1587 HOME:165m
+[SIM] ROLL:-32.8 PITCH:-4.6 YAW:15.3 | ALT:85.8m V:-2.67m/s SPD:18.0 | VBAT:16.29V THR:1427 HOME:165m
+[SIM] ROLL:-27.7 PITCH:-13.9 YAW:35.5 | ALT:82.7m V:-3.45m/s SPD:18.3 | VBAT:16.29V THR:1279 HOME:164m
+[SIM] ROLL:-20.1 PITCH:-20.9 YAW:55.7 | ALT:78.9m V:-4.15m/s SPD:18.3 | VBAT:16.29V THR:1166 HOME:164m
+[SIM] ROLL:-10.6 PITCH:-24.6 YAW:75.9 | ALT:74.4m V:-4.76m/s SPD:18.0 | VBAT:16.28V THR:1107 HOME:164m
+[SIM] ROLL:-0.2 PITCH:-24.3 YAW:96.1 | ALT:69.3m V:-5.26m/s SPD:17.3 | VBAT:16.28V THR:1111 HOME:164m
+[SIM] ROLL:10.2 PITCH:-20.2 YAW:116.3 | ALT:63.8m V:-5.63m/s SPD:16.3 | VBAT:16.28V THR:1178 HOME:164m
+[SIM] ROLL:19.8 PITCH:-12.7 YAW:136.5 | ALT:58.0m V:-5.88m/s SPD:15.2 | VBAT:16.28V THR:1297 HOME:163m
+[SIM] ROLL:27.5 PITCH:-3.3 YAW:156.6 | ALT:52.0m V:-5.99m/s SPD:13.9 | VBAT:16.28V THR:1448 HOME:163m
+[SIM] ROLL:32.7 PITCH:6.8 YAW:176.9 | ALT:45.9m V:-5.97m/s SPD:12.5 | VBAT:16.28V THR:1608 HOME:163m
+[SIM] ROLL:34.9 PITCH:15.7 YAW:197.1 | ALT:39.9m V:-5.81m/s SPD:11.2 | VBAT:16.27V THR:1750 HOME:163m
+[SIM] ROLL:34.0 PITCH:22.1 YAW:217.3 | ALT:34.2m V:-5.51m/s SPD:9.9 | VBAT:16.27V THR:1853 HOME:164m
+[SIM] ROLL:29.9 PITCH:24.9 YAW:237.6 | ALT:28.8m V:-5.09m/s SPD:8.8 | VBAT:16.27V THR:1898 HOME:164m
+[SIM] ROLL:23.1 PITCH:23.7 YAW:257.8 | ALT:23.9m V:-4.55m/s SPD:7.9 | VBAT:16.27V THR:1879 HOME:164m
+[SIM] ROLL:14.2 PITCH:18.7 YAW:278.1 | ALT:19.6m V:-3.91m/s SPD:7.2 | VBAT:16.27V THR:1798 HOME:164m
+[SIM] ROLL:4.0 PITCH:10.6 YAW:298.3 | ALT:16.1m V:-3.17m/s SPD:6.8 | VBAT:16.27V THR:1670 HOME:165m
+[SIM] ROLL:-6.5 PITCH:0.9 YAW:318.5 | ALT:13.3m V:-2.37m/s SPD:6.8 | VBAT:16.26V THR:1514 HOME:165m
+[SIM] ROLL:-16.5 PITCH:-9.0 YAW:338.7 | ALT:11.3m V:-1.51m/s SPD:7.3 | VBAT:16.26V THR:1356 HOME:165m
+[SIM] ROLL:-24.9 PITCH:-17.4 YAW:358.9 | ALT:10.2m V:-0.62m/s SPD:8.2 | VBAT:16.26V THR:1222 HOME:165m
+[SIM] ROLL:-31.1 PITCH:-23.1 YAW:19.1 | ALT:10.0m V:0.29m/s SPD:9.4 | VBAT:16.26V THR:1131 HOME:166m192.168.1.79 - - [28/May/2026 14:02:34] "GET /api/telemetry HTTP/1.1" 200 -
+
+[SIM] ROLL:-34.5 PITCH:-25.0 YAW:39.4 | ALT:10.8m V:1.20m/s SPD:10.9 | VBAT:16.26V THR:1101 HOME:166m
+[SIM] ROLL:-34.7 PITCH:-22.9 YAW:59.5 | ALT:12.5m V:2.07m/s SPD:12.5 | VBAT:16.26V THR:1134 HOME:166m
+[SIM] ROLL:-31.7 PITCH:-17.1 YAW:79.7 | ALT:15.0m V:2.89m/s SPD:14.2 | VBAT:16.25V THR:1227 HOME:166m
+[SIM] ROLL:-25.9 PITCH:-8.6 YAW:99.8 | ALT:18.3m V:3.65m/s SPD:15.7 | VBAT:16.25V THR:1363 HOME:166m
+[SIM] ROLL:-17.8 PITCH:1.3 YAW:119.9 | ALT:22.3m V:4.32m/s SPD:16.9 | VBAT:16.25V THR:1520 HOME:166m
+[SIM] ROLL:-8.0 PITCH:11.0 YAW:140.1 | ALT:26.9m V:4.90m/s SPD:17.9 | VBAT:16.25V THR:1675 HOME:166m
+[SIM] ROLL:2.6 PITCH:18.9 YAW:160.3 | ALT:32.1m V:5.37m/s SPD:18.6 | VBAT:16.25V THR:1802 HOME:166m
+[SIM] ROLL:12.9 PITCH:23.8 YAW:180.5 | ALT:37.7m V:5.71m/s SPD:18.9 | VBAT:16.24V THR:1881 HOME:166m
+[SIM] ROLL:22.0 PITCH:24.9 YAW:200.7 | ALT:43.6m V:5.92m/s SPD:18.8 | VBAT:16.24V THR:1898 HOME:166m
+[SIM] ROLL:29.1 PITCH:21.9 YAW:220.9 | ALT:49.7m V:6.00m/s SPD:18.3 | VBAT:16.24V THR:1850 HOME:166m
+[SIM] ROLL:33.6 PITCH:15.4 YAW:241.2 | ALT:55.7m V:5.94m/s SPD:17.4 | VBAT:16.24V THR:1746 HOME:165m
+[SIM] ROLL:35.0 PITCH:6.5 YAW:261.3 | ALT:61.6m V:5.74m/s SPD:16.2 | VBAT:16.24V THR:1603 HOME:165m
+[SIM] ROLL:33.2 PITCH:-3.6 YAW:281.6 | ALT:67.3m V:5.41m/s SPD:14.8 | VBAT:16.24V THR:1444 HOME:165m
+[SIM] ROLL:28.4 PITCH:-13.0 YAW:301.8 | ALT:72.5m V:4.96m/s SPD:13.3 | VBAT:16.23V THR:1292 HOME:164m
+[SIM] ROLL:21.0 PITCH:-20.4 YAW:322.0 | ALT:77.2m V:4.39m/s SPD:11.7 | VBAT:16.23V THR:1175 HOME:164m
+[SIM] ROLL:11.6 PITCH:-24.4 YAW:342.2 | ALT:81.4m V:3.72m/s SPD:10.1 | VBAT:16.23V THR:1110 HOME:164m
+[SIM] ROLL:1.3 PITCH:-24.6 YAW:2.4 | ALT:84.7m V:2.97m/s SPD:8.6 | VBAT:16.23V THR:1108 HOME:164m
+[SIM] ROLL:-9.2 PITCH:-20.7 YAW:22.6 | ALT:87.3m V:2.15m/s SPD:7.4 | VBAT:16.23V THR:1169 HOME:164m
+[SIM] ROLL:-18.9 PITCH:-13.6 YAW:42.8 | ALT:89.1m V:1.28m/s SPD:6.5 | VBAT:16.23V THR:1284 HOME:163m
+[SIM] ROLL:-26.8 PITCH:-4.2 YAW:63.1 | ALT:89.9m V:0.38m/s SPD:6.0 | VBAT:16.22V THR:1433 HOME:163m
+[SIM] ROLL:-32.3 PITCH:5.8 YAW:83.3 | ALT:89.8m V:-0.53m/s SPD:6.1 | VBAT:16.22V THR:1593 HOME:163m
+[SIM] ROLL:-34.9 PITCH:14.9 YAW:103.5 | ALT:88.9m V:-1.42m/s SPD:6.6 | VBAT:16.22V THR:1738 HOME:163m
+[SIM] ROLL:-34.2 PITCH:21.6 YAW:123.7 | ALT:87.0m V:-2.29m/s SPD:7.6 | VBAT:16.22V THR:1845 HOME:164m
+[SIM] ROLL:-30.5 PITCH:24.8 YAW:143.9 | ALT:84.2m V:-3.10m/s SPD:8.9 | VBAT:16.22V THR:1896 HOME:164m
+[SIM] ROLL:-23.9 PITCH:24.0 YAW:164.2 | ALT:80.7m V:-3.84m/s SPD:10.3 | VBAT:16.22V THR:1883 HOME:164m
+[SIM] ROLL:-15.2 PITCH:19.3 YAW:184.4 | ALT:76.5m V:-4.50m/s SPD:11.9 | VBAT:16.21V THR:1809 HOME:164m
+[SIM] ROLL:-5.0 PITCH:11.5 YAW:204.6 | ALT:71.7m V:-5.04m/s SPD:13.5 | VBAT:16.21V THR:1684 HOME:164m
+[SIM] ROLL:5.5 PITCH:1.9 YAW:224.7 | ALT:66.4m V:-5.47m/s SPD:15.1 | VBAT:16.21V THR:1530 HOME:165m
+[SIM] ROLL:15.5 PITCH:-8.0 YAW:244.9 | ALT:60.7m V:-5.78m/s SPD:16.4 | VBAT:16.21V THR:1372 HOME:165m
+[SIM] ROLL:24.1 PITCH:-16.6 YAW:265.0 | ALT:54.8m V:-5.96m/s SPD:17.5 | VBAT:16.21V THR:1234 HOME:165m
+[SIM] ROLL:30.6 PITCH:-22.6 YAW:285.2 | ALT:48.7m V:-6.00m/s SPD:18.4 | VBAT:16.21V THR:1138 HOME:166m
+[SIM] ROLL:34.3 PITCH:-25.0 YAW:305.3 | ALT:42.7m V:-5.90m/s SPD:18.8 | VBAT:16.20V THR:1101 HOME:166m
+[SIM] ROLL:34.8 PITCH:-23.3 YAW:325.5 | ALT:36.9m V:-5.67m/s SPD:18.9 | VBAT:16.20V THR:1127 HOME:166m
+[SIM] ROLL:32.2 PITCH:-17.9 YAW:345.7 | ALT:31.3m V:-5.31m/s SPD:18.5 | VBAT:16.20V THR:1214 HOME:166m
+[SIM] ROLL:26.7 PITCH:-9.6 YAW:5.9 | ALT:26.2m V:-4.82m/s SPD:17.8 | VBAT:16.20V THR:1347 HOME:166m
+[SIM] ROLL:18.7 PITCH:0.2 YAW:26.1 | ALT:21.6m V:-4.23m/s SPD:16.8 | VBAT:16.20V THR:1503 HOME:166m
+[SIM] ROLL:9.0 PITCH:10.1 YAW:46.4 | ALT:17.7m V:-3.54m/s SPD:15.4 | VBAT:16.20V THR:1660 HOME:166m
+[SIM] ROLL:-1.5 PITCH:18.3 YAW:66.6 | ALT:14.5m V:-2.76m/s SPD:13.9 | VBAT:16.19V THR:1792 HOME:166m
+[SIM] ROLL:-11.9 PITCH:23.5 YAW:86.8 | ALT:12.1m V:-1.93m/s SPD:12.3 | VBAT:16.19V THR:1876 HOME:166m
+[SIM] ROLL:-21.2 PITCH:25.0 YAW:107.0 | ALT:10.6m V:-1.05m/s SPD:10.7 | VBAT:16.19V THR:1899 HOME:166m
+[SIM] ROLL:-28.5 PITCH:22.4 YAW:127.2 | ALT:10.0m V:-0.14m/s SPD:9.2 | VBAT:16.19V THR:1858 HOME:166m
+[SIM] ROLL:-33.3 PITCH:16.2 YAW:147.5 | ALT:10.3m V:0.77m/s SPD:8.0 | VBAT:16.19V THR:1759 HOME:165m
+[SIM] ROLL:-35.0 PITCH:7.4 YAW:167.7 | ALT:11.6m V:1.66m/s SPD:7.2 | VBAT:16.19V THR:1618 HOME:165m
+[SIM] ROLL:-33.5 PITCH:-2.6 YAW:187.9 | ALT:13.7m V:2.51m/s SPD:6.8 | VBAT:16.18V THR:1459 HOME:165m
+[SIM] ROLL:-29.0 PITCH:-12.2 YAW:208.2 | ALT:16.6m V:3.31m/s SPD:6.9 | VBAT:16.18V THR:1305 HOME:164m
+[SIM] ROLL:-21.8 PITCH:-19.8 YAW:228.4 | ALT:20.3m V:4.02m/s SPD:7.3 | VBAT:16.18V THR:1184 HOME:164m
+[SIM] ROLL:-12.6 PITCH:-24.2 YAW:248.7 | ALT:24.7m V:4.65m/s SPD:8.0 | VBAT:16.18V THR:1113 HOME:164m
+[SIM] ROLL:-2.2 PITCH:-24.7 YAW:268.9 | ALT:29.7m V:5.17m/s SPD:9.0 | VBAT:16.18V THR:1105 HOME:164m
+[SIM] ROLL:8.3 PITCH:-21.2 YAW:289.1 | ALT:35.1m V:5.57m/s SPD:10.1 | VBAT:16.18V THR:1161 HOME:164m
+[SIM] ROLL:18.0 PITCH:-14.4 YAW:309.2 | ALT:40.9m V:5.84m/s SPD:11.4 | VBAT:16.17V THR:1271 HOME:163m
+[SIM] ROLL:26.2 PITCH:-5.1 YAW:329.5 | ALT:46.9m V:5.98m/s SPD:12.7 | VBAT:16.17V THR:1419 HOME:163m
+[SIM] ROLL:31.9 PITCH:4.9 YAW:349.7 | ALT:52.9m V:5.98m/s SPD:14.1 | VBAT:16.17V THR:1578 HOME:163m
+[SIM] ROLL:34.8 PITCH:14.2 YAW:10.0 | ALT:59.0m V:5.85m/s SPD:15.4 | VBAT:16.17V THR:1726 HOME:163m
+[SIM] ROLL:34.4 PITCH:21.1 YAW:30.1 | ALT:64.7m V:5.58m/s SPD:16.5 | VBAT:16.17V THR:1837 HOME:164m
+[SIM] ROLL:30.9 PITCH:24.7 YAW:50.4 | ALT:70.2m V:5.18m/s SPD:17.4 | VBAT:16.17V THR:1894 HOME:164m
+[SIM] ROLL:24.6 PITCH:24.3 YAW:70.6 | ALT:75.2m V:4.66m/s SPD:18.1 | VBAT:16.16V THR:1888 HOME:164m
+[SIM] ROLL:16.1 PITCH:19.9 YAW:90.8 | ALT:79.6m V:4.04m/s SPD:18.3 | VBAT:16.16V THR:1818 HOME:164m
+[SIM] ROLL:6.1 PITCH:12.4 YAW:111.0 | ALT:83.3m V:3.32m/s SPD:18.3 | VBAT:16.16V THR:1698 HOME:164m
+[SIM] ROLL:-4.5 PITCH:2.9 YAW:131.2 | ALT:86.3m V:2.53m/s SPD:17.9 | VBAT:16.16V THR:1545 HOME:165m
+[SIM] ROLL:-14.6 PITCH:-7.1 YAW:151.3 | ALT:88.4m V:1.68m/s SPD:17.1 | VBAT:16.16V THR:1387 HOME:165m
+[SIM] ROLL:-23.4 PITCH:-15.9 YAW:171.4 | ALT:89.6m V:0.80m/s SPD:16.1 | VBAT:16.16V THR:1246 HOME:165m
+[SIM] ROLL:-30.1 PITCH:-22.2 YAW:191.6 | ALT:90.0m V:-0.10m/s SPD:14.8 | VBAT:16.15V THR:1145 HOME:166m
+[SIM] ROLL:-34.0 PITCH:-24.9 YAW:211.7 | ALT:89.4m V:-1.00m/s SPD:13.5 | VBAT:16.15V THR:1102 HOME:166m
+[SIM] ROLL:-34.9 PITCH:-23.7 YAW:231.9 | ALT:88.0m V:-1.88m/s SPD:12.1 | VBAT:16.15V THR:1122 HOME:166m
+[SIM] ROLL:-32.6 PITCH:-18.6 YAW:252.0 | ALT:85.7m V:-2.72m/s SPD:10.8 | VBAT:16.15V THR:1203 HOME:166m
+[SIM] ROLL:-27.3 PITCH:-10.5 YAW:272.3 | ALT:82.5m V:-3.50m/s SPD:9.7 | VBAT:16.15V THR:1332 HOME:166m
+[SIM] ROLL:-19.6 PITCH:-0.8 YAW:292.4 | ALT:78.6m V:-4.19m/s SPD:8.9 | VBAT:16.15V THR:1488 HOME:166m
+[SIM] ROLL:-10.1 PITCH:9.1 YAW:312.5 | ALT:74.1m V:-4.79m/s SPD:8.4 | VBAT:16.14V THR:1644 HOME:166m
+[SIM] ROLL:0.4 PITCH:17.5 YAW:332.8 | ALT:69.0m V:-5.28m/s SPD:8.2 | VBAT:16.14V THR:1780 HOME:166m
+[SIM] ROLL:10.8 PITCH:23.1 YAW:352.9 | ALT:63.5m V:-5.65m/s SPD:8.2 | VBAT:16.14V THR:1869 HOME:166m
+[SIM] ROLL:20.2 PITCH:25.0 YAW:13.0 | ALT:57.7m V:-5.89m/s SPD:8.5 | VBAT:16.14V THR:1899 HOME:166m
+[SIM] ROLL:27.8 PITCH:22.9 YAW:33.1 | ALT:51.7m V:-5.99m/s SPD:8.9 | VBAT:16.14V THR:1866 HOME:166m
+[SIM] ROLL:32.8 PITCH:17.2 YAW:53.2 | ALT:45.7m V:-5.96m/s SPD:9.5 | VBAT:16.14V THR:1774 HOME:165m
+[SIM] ROLL:35.0 PITCH:8.7 YAW:73.4 | ALT:39.7m V:-5.80m/s SPD:10.3 | VBAT:16.13V THR:1638 HOME:165m
+[SIM] ROLL:33.9 PITCH:-1.2 YAW:93.5 | ALT:34.0m V:-5.50m/s SPD:11.3 | VBAT:16.13V THR:1481 HOME:165m
+[SIM] ROLL:29.7 PITCH:-11.0 YAW:113.9 | ALT:28.6m V:-5.07m/s SPD:12.4 | VBAT:16.13V THR:1324 HOME:164m
+[SIM] ROLL:22.9 PITCH:-18.9 YAW:134.0 | ALT:23.8m V:-4.53m/s SPD:13.6 | VBAT:16.13V THR:1198 HOME:164m
+[SIM] ROLL:14.0 PITCH:-23.8 YAW:154.1 | ALT:19.5m V:-3.89m/s SPD:14.8 | VBAT:16.13V THR:1120 HOME:164m
+[SIM] ROLL:3.8 PITCH:-24.9 YAW:174.2 | ALT:16.0m V:-3.16m/s SPD:15.9 | VBAT:16.13V THR:1102 HOME:164m
+[SIM] ROLL:-6.7 PITCH:-22.0 YAW:194.3 | ALT:13.2m V:-2.36m/s SPD:16.9 | VBAT:16.12V THR:1148 HOME:164m
+[SIM] ROLL:-16.6 PITCH:-15.6 YAW:214.5 | ALT:11.3m V:-1.50m/s SPD:17.5 | VBAT:16.12V THR:1251 HOME:163m192.168.1.79 - - [28/May/2026 14:03:34] "GET /api/telemetry HTTP/1.1" 200 -
+192.168.1.79 - - [28/May/2026 14:04:34] "GET /api/telemetry HTTP/1.1" 200 -
+
+[SIM] ROLL:-25.0 PITCH:-6.7 YAW:234.6 | ALT:10.2m V:-0.61m/s SPD:17.9 | VBAT:16.12V THR:1394 HOME:163m
+[SIM] ROLL:-31.2 PITCH:3.3 YAW:254.8 | ALT:10.0m V:0.30m/s SPD:18.0 | VBAT:16.12V THR:1552 HOME:163m
+[SIM] ROLL:-34.5 PITCH:12.7 YAW:274.9 | ALT:10.8m V:1.20m/s SPD:17.7 | VBAT:16.12V THR:1703 HOME:163m
+[SIM] ROLL:-34.7 PITCH:20.1 YAW:295.0 | ALT:12.4m V:2.07m/s SPD:17.1 | VBAT:16.12V THR:1822 HOME:164m
+[SIM] ROLL:-31.8 PITCH:24.3 YAW:315.1 | ALT:14.9m V:2.89m/s SPD:16.3 | VBAT:16.11V THR:1889 HOME:164m
+[SIM] ROLL:-25.9 PITCH:24.6 YAW:335.3 | ALT:18.2m V:3.65m/s SPD:15.2 | VBAT:16.11V THR:1894 HOME:164m
+[SIM] ROLL:-17.7 PITCH:21.0 YAW:355.5 | ALT:22.3m V:4.32m/s SPD:14.0 | VBAT:16.11V THR:1835 HOME:164m
+[SIM] ROLL:-8.0 PITCH:14.0 YAW:15.6 | ALT:26.9m V:4.90m/s SPD:12.8 | VBAT:16.11V THR:1723 HOME:164m
+[SIM] ROLL:2.5 PITCH:4.7 YAW:35.7 | ALT:32.1m V:5.37m/s SPD:11.7 | VBAT:16.11V THR:1575 HOME:165m
+[SIM] ROLL:12.8 PITCH:-5.3 YAW:55.8 | ALT:37.7m V:5.71m/s SPD:10.6 | VBAT:16.11V THR:1416 HOME:165m
+[SIM] ROLL:21.9 PITCH:-14.4 YAW:76.0 | ALT:43.5m V:5.92m/s SPD:9.8 | VBAT:16.10V THR:1270 HOME:165m
+[SIM] ROLL:29.1 PITCH:-21.3 YAW:96.2 | ALT:49.6m V:6.00m/s SPD:9.1 | VBAT:16.10V THR:1160 HOME:166m
+[SIM] ROLL:33.6 PITCH:-24.7 YAW:116.5 | ALT:55.6m V:5.94m/s SPD:8.6 | VBAT:16.10V THR:1105 HOME:166m
+[SIM] ROLL:35.0 PITCH:-24.2 YAW:136.6 | ALT:61.5m V:5.74m/s SPD:8.3 | VBAT:16.10V THR:1114 HOME:166m
+[SIM] ROLL:33.2 PITCH:-19.7 YAW:156.9 | ALT:67.2m V:5.42m/s SPD:8.2 | VBAT:16.10V THR:1185 HOME:166m
+[SIM] ROLL:28.5 PITCH:-12.1 YAW:177.0 | ALT:72.5m V:4.97m/s SPD:8.3 | VBAT:16.10V THR:1307 HOME:166m
+[SIM] ROLL:21.1 PITCH:-2.5 YAW:197.3 | ALT:77.2m V:4.40m/s SPD:8.7 | VBAT:16.09V THR:1461 HOME:166m
+[SIM] ROLL:11.8 PITCH:7.4 YAW:217.4 | ALT:81.3m V:3.74m/s SPD:9.4 | VBAT:16.09V THR:1619 HOME:166m
+[SIM] ROLL:1.4 PITCH:16.2 YAW:237.6 | ALT:84.7m V:2.98m/s SPD:10.4 | VBAT:16.09V THR:1759 HOME:166m
+[SIM] ROLL:-9.1 PITCH:22.4 YAW:257.8 | ALT:87.3m V:2.16m/s SPD:11.7 | VBAT:16.09V THR:1858 HOME:166m
+[SIM] ROLL:-18.7 PITCH:25.0 YAW:277.9 | ALT:89.1m V:1.30m/s SPD:13.0 | VBAT:16.09V THR:1899 HOME:166m
+[SIM] ROLL:-26.7 PITCH:23.5 YAW:298.2 | ALT:89.9m V:0.40m/s SPD:14.4 | VBAT:16.09V THR:1876 HOME:166m
+[SIM] ROLL:-32.2 PITCH:18.3 YAW:318.4 | ALT:89.9m V:-0.51m/s SPD:15.7 | VBAT:16.08V THR:1792 HOME:165m
+[SIM] ROLL:-34.8 PITCH:10.1 YAW:338.6 | ALT:88.9m V:-1.41m/s SPD:16.8 | VBAT:16.08V THR:1661 HOME:165m
+[SIM] ROLL:-34.3 PITCH:0.3 YAW:358.9 | ALT:87.0m V:-2.27m/s SPD:17.7 | VBAT:16.08V THR:1504 HOME:165m
+[SIM] ROLL:-30.5 PITCH:-9.6 YAW:19.1 | ALT:84.3m V:-3.09m/s SPD:18.2 | VBAT:16.08V THR:1347 HOME:165m
+[SIM] ROLL:-24.1 PITCH:-17.9 YAW:39.3 | ALT:80.8m V:-3.83m/s SPD:18.4 | VBAT:16.08V THR:1214 HOME:164m
+[SIM] ROLL:-15.3 PITCH:-23.3 YAW:59.6 | ALT:76.6m V:-4.48m/s SPD:18.2 | VBAT:16.08V THR:1127 HOME:164m
+[SIM] ROLL:-5.3 PITCH:-25.0 YAW:79.7 | ALT:71.8m V:-5.03m/s SPD:17.6 | VBAT:16.07V THR:1101 HOME:164m
+[SIM] ROLL:5.4 PITCH:-22.6 YAW:100.0 | ALT:66.4m V:-5.47m/s SPD:16.8 | VBAT:16.07V THR:1139 HOME:164m
+[SIM] ROLL:15.5 PITCH:-16.5 YAW:120.3 | ALT:60.7m V:-5.78m/s SPD:15.7 | VBAT:16.07V THR:1236 HOME:163m
+[SIM] ROLL:24.1 PITCH:-7.9 YAW:140.5 | ALT:54.8m V:-5.96m/s SPD:14.5 | VBAT:16.07V THR:1375 HOME:163m
+[SIM] ROLL:30.6 PITCH:2.1 YAW:160.6 | ALT:48.8m V:-6.00m/s SPD:13.1 | VBAT:16.07V THR:1533 HOME:163m
+[SIM] ROLL:34.3 PITCH:11.7 YAW:180.8 | ALT:42.7m V:-5.90m/s SPD:11.8 | VBAT:16.06V THR:1687 HOME:163m
+[SIM] ROLL:34.8 PITCH:19.4 YAW:201.0 | ALT:36.9m V:-5.67m/s SPD:10.5 | VBAT:16.06V THR:1811 HOME:163m
+[SIM] ROLL:32.2 PITCH:24.1 YAW:221.3 | ALT:31.3m V:-5.31m/s SPD:9.3 | VBAT:16.06V THR:1885 HOME:164m
+[SIM] ROLL:26.7 PITCH:24.8 YAW:241.5 | ALT:26.2m V:-4.82m/s SPD:8.3 | VBAT:16.06V THR:1896 HOME:164m
+[SIM] ROLL:18.7 PITCH:21.5 YAW:261.7 | ALT:21.6m V:-4.23m/s SPD:7.5 | VBAT:16.06V THR:1844 HOME:164m
+[SIM] ROLL:9.0 PITCH:14.8 YAW:281.8 | ALT:17.7m V:-3.54m/s SPD:7.0 | VBAT:16.06V THR:1737 HOME:164m
+[SIM] ROLL:-1.5 PITCH:5.7 YAW:302.1 | ALT:14.5m V:-2.76m/s SPD:6.8 | VBAT:16.05V THR:1590 HOME:165m
+[SIM] ROLL:-11.9 PITCH:-4.3 YAW:322.3 | ALT:12.1m V:-1.93m/s SPD:7.0 | VBAT:16.05V THR:1431 HOME:165m
+[SIM] ROLL:-21.1 PITCH:-13.7 YAW:342.4 | ALT:10.6m V:-1.05m/s SPD:7.7 | VBAT:16.05V THR:1282 HOME:165m
+[SIM] ROLL:-28.5 PITCH:-20.8 YAW:2.7 | ALT:10.0m V:-0.15m/s SPD:8.8 | VBAT:16.05V THR:1168 HOME:166m
+[SIM] ROLL:-33.3 PITCH:-24.6 YAW:22.9 | ALT:10.3m V:0.76m/s SPD:10.2 | VBAT:16.05V THR:1107 HOME:166m
+[SIM] ROLL:-35.0 PITCH:-24.4 YAW:43.1 | ALT:11.5m V:1.65m/s SPD:11.8 | VBAT:16.05V THR:1110 HOME:166m
+[SIM] ROLL:-33.5 PITCH:-20.3 YAW:63.3 | ALT:13.7m V:2.50m/s SPD:13.4 | VBAT:16.04V THR:1176 HOME:166m
+[SIM] ROLL:-29.0 PITCH:-12.9 YAW:83.5 | ALT:16.6m V:3.30m/s SPD:15.0 | VBAT:16.04V THR:1294 HOME:166m
+[SIM] ROLL:-21.8 PITCH:-3.4 YAW:103.7 | ALT:20.3m V:4.02m/s SPD:16.4 | VBAT:16.04V THR:1446 HOME:166m
+[SIM] ROLL:-12.7 PITCH:6.5 YAW:123.9 | ALT:24.7m V:4.64m/s SPD:17.5 | VBAT:16.04V THR:1604 HOME:166m
+[SIM] ROLL:-2.4 PITCH:15.5 YAW:144.1 | ALT:29.6m V:5.16m/s SPD:18.3 | VBAT:16.04V THR:1748 HOME:166m
+[SIM] ROLL:8.1 PITCH:22.0 YAW:164.3 | ALT:35.1m V:5.57m/s SPD:18.8 | VBAT:16.04V THR:1851 HOME:166m
+[SIM] ROLL:17.9 PITCH:24.9 YAW:184.5 | ALT:40.8m V:5.84m/s SPD:18.9 | VBAT:16.03V THR:1898 HOME:166m
+[SIM] ROLL:26.1 PITCH:23.8 YAW:204.7 | ALT:46.8m V:5.98m/s SPD:18.5 | VBAT:16.03V THR:1880 HOME:166m
+[SIM] ROLL:31.9 PITCH:18.8 YAW:225.0 | ALT:52.9m V:5.98m/s SPD:17.8 | VBAT:16.03V THR:1801 HOME:165m
+[SIM] ROLL:34.7 PITCH:10.9 YAW:245.1 | ALT:58.9m V:5.85m/s SPD:16.8 | VBAT:16.03V THR:1674 HOME:165m
+[SIM] ROLL:34.4 PITCH:1.2 YAW:265.4 | ALT:64.7m V:5.58m/s SPD:15.5 | VBAT:16.03V THR:1518 HOME:165m
+[SIM] ROLL:31.0 PITCH:-8.7 YAW:285.5 | ALT:70.1m V:5.19m/s SPD:14.0 | VBAT:16.03V THR:1361 HOME:165m
+[SIM] ROLL:24.8 PITCH:-17.2 YAW:305.7 | ALT:75.1m V:4.68m/s SPD:12.4 | VBAT:16.02V THR:1225 HOME:164m
+[SIM] ROLL:16.3 PITCH:-22.9 YAW:325.8 | ALT:79.5m V:4.06m/s SPD:10.8 | VBAT:16.02V THR:1134 HOME:164m
+[SIM] ROLL:6.4 PITCH:-25.0 YAW:345.9 | ALT:83.2m V:3.35m/s SPD:9.3 | VBAT:16.02V THR:1101 HOME:164m
+[SIM] ROLL:-4.1 PITCH:-23.1 YAW:6.0 | ALT:86.2m V:2.56m/s SPD:8.0 | VBAT:16.02V THR:1131 HOME:164m
+[SIM] ROLL:-14.3 PITCH:-17.4 YAW:26.2 | ALT:88.3m V:1.71m/s SPD:6.9 | VBAT:16.02V THR:1222 HOME:163m
+[SIM] ROLL:-23.2 PITCH:-9.0 YAW:46.5 | ALT:89.6m V:0.82m/s SPD:6.2 | VBAT:16.02V THR:1357 HOME:163m
+[SIM] ROLL:-30.0 PITCH:1.0 YAW:66.7 | ALT:90.0m V:-0.09m/s SPD:6.0 | VBAT:16.01V THR:1515 HOME:163m
+[SIM] ROLL:-34.0 PITCH:10.7 YAW:86.9 | ALT:89.5m V:-0.99m/s SPD:6.3 | VBAT:16.01V THR:1671 HOME:163m
+[SIM] ROLL:-34.9 PITCH:18.7 YAW:107.1 | ALT:88.0m V:-1.87m/s SPD:7.1 | VBAT:16.01V THR:1799 HOME:163m
+[SIM] ROLL:-32.7 PITCH:23.7 YAW:127.2 | ALT:85.7m V:-2.71m/s SPD:8.2 | VBAT:16.01V THR:1879 HOME:164m
+[SIM] ROLL:-27.5 PITCH:24.9 YAW:147.3 | ALT:82.6m V:-3.48m/s SPD:9.6 | VBAT:16.01V THR:1898 HOME:164m
+[SIM] ROLL:-19.8 PITCH:22.1 YAW:167.5 | ALT:78.7m V:-4.18m/s SPD:11.1 | VBAT:16.01V THR:1854 HOME:164m
+[SIM] ROLL:-10.3 PITCH:15.8 YAW:187.6 | ALT:74.2m V:-4.78m/s SPD:12.7 | VBAT:16.00V THR:1753 HOME:164m
+[SIM] ROLL:0.1 PITCH:7.0 YAW:207.7 | ALT:69.1m V:-5.27m/s SPD:14.3 | VBAT:16.00V THR:1611 HOME:165m
+[SIM] ROLL:10.7 PITCH:-3.2 YAW:228.3 | ALT:63.5m V:-5.65m/s SPD:15.8 | VBAT:16.00V THR:1449 HOME:165m
+[SIM] ROLL:20.2 PITCH:-12.7 YAW:248.6 | ALT:57.6m V:-5.89m/s SPD:17.0 | VBAT:16.00V THR:1297 HOME:165m
+[SIM] ROLL:27.8 PITCH:-20.2 YAW:268.9 | ALT:51.6m V:-6.00m/s SPD:18.0 | VBAT:16.00V THR:1177 HOME:165m
+[SIM] ROLL:32.9 PITCH:-24.4 YAW:289.0 | ALT:45.6m V:-5.96m/s SPD:18.6 | VBAT:16.00V THR:1111 HOME:166m
+[SIM] ROLL:35.0 PITCH:-24.6 YAW:309.1 | ALT:39.7m V:-5.80m/s SPD:18.9 | VBAT:15.99V THR:1107 HOME:166m
+[SIM] ROLL:33.9 PITCH:-21.0 YAW:329.2 | ALT:34.0m V:-5.50m/s SPD:18.7 | VBAT:15.99V THR:1165 HOME:166m
+[SIM] ROLL:29.7 PITCH:-13.9 YAW:349.4 | ALT:28.6m V:-5.07m/s SPD:18.2 | VBAT:15.99V THR:1278 HOME:166m
+[SIM] ROLL:22.9 PITCH:-4.7 YAW:9.5 | ALT:23.8m V:-4.53m/s SPD:17.3 | VBAT:15.99V THR:1425 HOME:166m
+[SIM] ROLL:13.9 PITCH:5.3 YAW:29.7 | ALT:19.5m V:-3.89m/s SPD:16.1 | VBAT:15.99V THR:1585 HOME:166m
+[SIM] ROLL:3.7 PITCH:14.5 YAW:49.9 | ALT:16.0m V:-3.15m/s SPD:14.7 | VBAT:15.99V THR:1732 HOME:166m192.168.1.79 - - [28/May/2026 14:05:34] "GET /api/telemetry HTTP/1.1" 200 -

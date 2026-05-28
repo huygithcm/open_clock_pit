@@ -7,7 +7,7 @@
   },
   "fc": {
     "baudrate": 115200,
-    "port": "/dev/serial0",
+    "port": "/dev/ttyAMA0",
     "protocol": "auto"
   }
 }
