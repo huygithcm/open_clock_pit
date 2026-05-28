@@ -7,7 +7,7 @@
   },
   "fc": {
     "baudrate": 115200,
-    "port": "/dev/ttyAMA0",
-    "protocol": "auto"
+    "port": "/dev/serial/by-id/usb-ArduPilot_speedybeef4v4_410022000751343036343833-if00",
+    "protocol": "mavlink"
   }
 }
