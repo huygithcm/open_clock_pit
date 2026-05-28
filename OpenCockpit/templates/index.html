@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>OpenCockpit — Gauge Dashboard</title>
+<title>OpenCockpit — Swarm Mission Dashboard</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='gauge-style.css') }}" />
-<script src="https://cdn.jsdelivr.net/npm/gauge.js@1.3.7/dist/gauge.min.js"></script>
 </head>
 <body>
 
@@ -17,12 +16,12 @@
     <span class="brand-dot"></span>
     <div class="brand-text">
       <div class="brand-title">OPEN&nbsp;COCKPIT</div>
-      <div class="brand-sub">GAUGE DASHBOARD</div>
+      <div class="brand-sub">SWARM MISSION CONTROL</div>
     </div>
   </div>
 
   <nav class="tabs">
-    <button class="tab active" data-tab="gauges">GAUGES</button>
+    <button class="tab active" data-tab="swarm">SWARM-OS</button>
     <button class="tab" data-tab="telemetry">TELEMETRY</button>
     <button class="tab" data-tab="config">CONFIG</button>
   </nav>
@@ -34,126 +33,260 @@
 </header>
 
 <!-- ============================================================ -->
-<!--                        GAUGES TAB                             -->
+<!--                       SWARM-OS TAB                           -->
 <!-- ============================================================ -->
-<section class="tab-panel active" data-panel="gauges">
-  <div class="gauge-container">
-
-    <!-- ATTITUDE -->
-    <div class="gauge-group attitude-group">
-      <h3>ATTITUDE</h3>
-      <div class="attitude-display">
-        <canvas id="attitude-canvas"></canvas>
-        <div class="attitude-info">
-          <div class="attitude-value">
-            <label>PITCH</label>
-            <span id="attitude-pitch">0°</span>
+<section class="tab-panel active" data-panel="swarm">
+  <div class="swarm-grid">
+    
+    <!-- LEFT SIDEBAR: UAV LIST -->
+    <aside class="swarm-left">
+      <div class="panel-header">
+        <span class="header-icon">☲</span> SWARM STATUS
+      </div>
+      <div class="uav-list">
+        <!-- UAV-01 (LIVE) -->
+        <div class="uav-card active" id="card-uav-01">
+          <div class="uav-header">
+            <span class="status-dot online"></span>
+            <span class="uav-name">UAV-01</span>
+            <span class="uav-eta">ETA 2:14</span>
           </div>
-          <div class="attitude-value">
-            <label>ROLL</label>
-            <span id="attitude-roll">0°</span>
+          <div class="uav-body">
+            <div class="uav-stat"><span>ALT</span><span id="uav-01-alt">0m</span></div>
+            <div class="uav-stat"><span>SPEED</span><span id="uav-01-speed">0m/s</span></div>
+            <!-- Expanded live telemetry indicators -->
+            <div class="uav-telemetry-grid">
+              <div class="tel-mini"><span>BAT</span><span id="uav-01-vbat">--V</span></div>
+              <div class="tel-mini"><span>CUR</span><span id="uav-01-current">--A</span></div>
+              <div class="tel-mini"><span>THR</span><span id="uav-01-throttle">--%</span></div>
+              <div class="tel-mini"><span>SIG</span><span id="uav-01-rssi">--</span></div>
+            </div>
+            <div class="uav-gps-info">
+              <span>GPS:</span> <span id="uav-01-gps">0 Sats</span>
+            </div>
           </div>
-          <div class="attitude-value">
-            <label>YAW</label>
-            <span id="attitude-yaw">0°</span>
+        </div>
+
+        <!-- UAV-02 (SIMULATED) -->
+        <div class="uav-card" id="card-uav-02">
+          <div class="uav-header">
+            <span class="status-dot online"></span>
+            <span class="uav-name">UAV-02</span>
+            <span class="uav-eta">ETA 2:31</span>
+          </div>
+          <div class="uav-body">
+            <div class="uav-stat"><span>ALT</span><span id="uav-02-alt">152m</span></div>
+            <div class="uav-stat"><span>SPEED</span><span id="uav-02-speed">14m/s</span></div>
+          </div>
+        </div>
+
+        <!-- UAV-04 (SIMULATED WARNING) -->
+        <div class="uav-card warning" id="card-uav-04">
+          <div class="uav-header">
+            <span class="status-dot warning-pulse"></span>
+            <span class="uav-name">UAV-04</span>
+            <span class="uav-eta">ETA 3:44</span>
+          </div>
+          <div class="uav-body">
+            <div class="uav-stat"><span>ALT</span><span id="uav-04-alt">88m</span></div>
+            <div class="uav-stat"><span>SPEED</span><span id="uav-04-speed">11m/s</span></div>
+          </div>
+        </div>
+
+        <!-- UAV-05 (STANDBY) -->
+        <div class="uav-card standby" id="card-uav-05">
+          <div class="uav-header">
+            <span class="status-dot standby"></span>
+            <span class="uav-name">UAV-05</span>
+            <span class="uav-eta">STBY</span>
+          </div>
+          <div class="uav-body">
+            <div class="uav-stat"><span>ALT</span><span>--</span></div>
+            <div class="uav-stat"><span>SPEED</span><span>--</span></div>
           </div>
         </div>
       </div>
-    </div>
+    </aside>
 
-    <!-- ALTITUDE -->
-    <div class="gauge-group">
-      <h3>ALTITUDE</h3>
-      <canvas id="gauge-altitude"></canvas>
-      <div class="gauge-info">
-        <span id="alt-value">0</span> m
-      </div>
-    </div>
-
-    <!-- SPEED -->
-    <div class="gauge-group">
-      <h3>SPEED 3D</h3>
-      <canvas id="gauge-speed"></canvas>
-      <div class="gauge-info">
-        <span id="speed-value">0</span> m/s
-      </div>
-    </div>
-
-    <!-- VERTICAL SPEED -->
-    <div class="gauge-group">
-      <h3>VERTICAL SPEED</h3>
-      <canvas id="gauge-vspeed"></canvas>
-      <div class="gauge-info">
-        <span id="vspeed-value">0</span> m/s
-      </div>
-    </div>
-
-    <!-- BATTERY -->
-    <div class="gauge-group">
-      <h3>BATTERY</h3>
-      <canvas id="gauge-battery"></canvas>
-      <div class="gauge-info">
-        <span id="battery-value">0</span> V
-      </div>
-    </div>
-
-    <!-- CURRENT -->
-    <div class="gauge-group">
-      <h3>CURRENT</h3>
-      <canvas id="gauge-current"></canvas>
-      <div class="gauge-info">
-        <span id="current-value">0</span> A
-      </div>
-    </div>
-
-    <!-- THROTTLE -->
-    <div class="gauge-group">
-      <h3>THROTTLE</h3>
-      <canvas id="gauge-throttle"></canvas>
-      <div class="gauge-info">
-        <span id="throttle-value">0</span> %
-      </div>
-    </div>
-
-    <!-- RSSI -->
-    <div class="gauge-group">
-      <h3>SIGNAL (RSSI)</h3>
-      <canvas id="gauge-rssi"></canvas>
-      <div class="gauge-info">
-        <span id="rssi-value">0</span>
-      </div>
-    </div>
-
-    <!-- GPS INFO -->
-    <div class="gauge-group gps-group">
-      <h3>GPS / NAVIGATION</h3>
-      <div class="gps-display">
-        <div class="gps-item">
-          <label>Satellites</label>
-          <span id="gps-sats">0</span>
+    <!-- CENTER AREA: MAP AND VIDEO FEEDS -->
+    <main class="swarm-center">
+      <!-- MAP CONTAINER -->
+      <div class="map-panel">
+        <div class="map-header">
+          <div class="map-title">MISSION ALPHA-7 // RECON MAP</div>
+          <div class="map-subtitle">TARGET COORDINATES AREA: ZONE_A</div>
         </div>
-        <div class="gps-item">
-          <label>Course</label>
-          <span id="gps-course">0°</span>
-        </div>
-        <div class="gps-item">
-          <label>Latitude</label>
-          <span id="gps-lat">--</span>
-        </div>
-        <div class="gps-item">
-          <label>Longitude</label>
-          <span id="gps-lon">--</span>
-        </div>
-        <div class="gps-item">
-          <label>Distance to Home</label>
-          <span id="home-dist">0 m</span>
-        </div>
-        <div class="gps-item">
-          <label>Home Direction</label>
-          <span id="home-dir">0°</span>
+        <div class="map-wrapper">
+          <canvas id="swarm-map"></canvas>
+          <button id="btn-end-mission" class="btn-end-mission">End mission</button>
         </div>
       </div>
-    </div>
+
+      <!-- CAMERA FEEDS CONTAINER -->
+      <div class="feeds-panel">
+        <div class="feeds-header">
+          <span>LIVE CAMERAS // MULTI-FEED OVERVIEW</span>
+        </div>
+        <div class="feeds-grid">
+          <!-- Feed UAV-01 -->
+          <div class="feed-cell" id="feed-uav-01">
+            <div class="feed-tag">UAV-01 CAM</div>
+            <canvas class="feed-canvas" id="canvas-feed-01"></canvas>
+          </div>
+          <!-- Feed UAV-02 -->
+          <div class="feed-cell" id="feed-uav-02">
+            <div class="feed-tag">UAV-02 CAM</div>
+            <canvas class="feed-canvas" id="canvas-feed-02"></canvas>
+          </div>
+          <!-- Feed UAV-04 -->
+          <div class="feed-cell" id="feed-uav-04">
+            <div class="feed-tag">UAV-04 CAM</div>
+            <canvas class="feed-canvas" id="canvas-feed-04"></canvas>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT PANEL: GRAPH, METRICS, ACTIONS -->
+    <section class="swarm-right">
+      <!-- NETWORK AND SYSTEM BAR -->
+      <div class="sys-health-panel">
+        <div class="health-row">
+          <span>UL 🡹</span>
+          <div class="health-track"><div class="health-fill" style="width: 76%;"></div></div>
+          <span class="health-val">76%</span>
+        </div>
+        <div class="health-row">
+          <span>DL 🡻</span>
+          <div class="health-track"><div class="health-fill" style="width: 58%;"></div></div>
+          <span class="health-val">58%</span>
+        </div>
+      </div>
+
+      <!-- ALTITUDE CHART -->
+      <div class="chart-panel">
+        <div class="panel-header">ALTITUDE PROFILE</div>
+        <div class="chart-wrapper">
+          <canvas id="swarm-altitude-chart"></canvas>
+        </div>
+        <div class="dist-row">
+          <div class="dist-card">
+            <label>TO UAV-01</label>
+            <span id="dist-uav-01">-- km</span>
+          </div>
+          <div class="dist-card">
+            <label>TO UAV-02</label>
+            <span>2.1 km</span>
+          </div>
+          <div class="dist-card">
+            <label>TO UAV-04</label>
+            <span>1.2 km</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SYSTEM METRICS (THE BAR CHARTS REPLACE GAUGES) -->
+      <div class="metrics-panel">
+        <div class="panel-header">SYSTEM TELEMETRY METRICS</div>
+        <div class="metrics-list">
+          <!-- BATTERY -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">BATTERY</span>
+              <span class="metric-value"><span id="metric-vbat">--</span> V</span>
+            </div>
+            <div class="metric-track">
+              <div class="metric-fill" id="fill-vbat"></div>
+            </div>
+          </div>
+          <!-- CURRENT -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">CURRENT DRAW</span>
+              <span class="metric-value"><span id="metric-current">--</span> A</span>
+            </div>
+            <div class="metric-track">
+              <div class="metric-fill" id="fill-current"></div>
+            </div>
+          </div>
+          <!-- THROTTLE -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">THROTTLE</span>
+              <span class="metric-value"><span id="metric-throttle">--</span> %</span>
+            </div>
+            <div class="metric-track">
+              <div class="metric-fill" id="fill-throttle"></div>
+            </div>
+          </div>
+          <!-- RSSI -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">SIGNAL RSSI</span>
+              <span class="metric-value"><span id="metric-rssi">--</span></span>
+            </div>
+            <div class="metric-track">
+              <div class="metric-fill" id="fill-rssi"></div>
+            </div>
+          </div>
+          <!-- SPEED 3D -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">GROUND SPEED</span>
+              <span class="metric-value"><span id="metric-speed">--</span> m/s</span>
+            </div>
+            <div class="metric-track">
+              <div class="metric-fill" id="fill-speed"></div>
+            </div>
+          </div>
+          <!-- VERTICAL SPEED (DUAL SIDEBAR) -->
+          <div class="metric-row">
+            <div class="metric-info">
+              <span class="metric-label">VERTICAL SPEED</span>
+              <span class="metric-value"><span id="metric-vspeed">--</span> m/s</span>
+            </div>
+            <div class="metric-track-dual">
+              <div class="metric-fill-dual-left" id="fill-vspeed-down"></div>
+              <div class="metric-divider"></div>
+              <div class="metric-fill-dual-right" id="fill-vspeed-up"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div class="actions-panel">
+        <div class="panel-header">QUICK ACTIONS</div>
+        <div class="actions-form">
+          <div class="action-field">
+            <label>ALT</label>
+            <div class="input-wrap">
+              <input type="text" id="action-alt" value="37.8442" />
+              <span class="unit">m</span>
+            </div>
+          </div>
+          <div class="action-field">
+            <label>TX G🡲A</label>
+            <div class="input-wrap">
+              <input type="text" id="action-tx-ga" value="37.8442" />
+              <span class="unit">mW</span>
+            </div>
+          </div>
+          <div class="action-field">
+            <label>TX A🡲G</label>
+            <div class="input-wrap">
+              <input type="text" id="action-tx-ag" value="37.8442" />
+              <span class="unit">mW</span>
+            </div>
+          </div>
+          <div class="actions-buttons">
+            <button id="btn-apply-one" class="btn-double-border">APPLY</button>
+            <button id="btn-apply-all" class="btn-double-border">APPLY all</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
 
   </div>
 </section>
@@ -293,17 +426,12 @@
         </div>
         <div class="form-row">
           <label></label>
-          <button id="btn-fc-test" class="btn">TEST LINK</button>
+          <div style="display: flex; gap: 10px; align-items: center;">
+            <button id="btn-fc-test" class="btn">TEST LINK</button>
+            <button id="btn-fc-save" class="btn primary">SAVE &amp; RESTART</button>
+            <span id="fc-status" class="status-text"></span>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="config-block">
-      <h2>DISPLAY SETTINGS</h2>
-      <div id="config-rows" class="config-form"></div>
-      <div style="margin-top: 14px;">
-        <button id="btn-apply" class="btn primary">APPLY &amp; RESTART</button>
-        <span id="apply-status" class="status-text"></span>
       </div>
     </div>
   </div>
