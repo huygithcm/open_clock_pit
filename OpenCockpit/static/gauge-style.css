@@ -1,20 +1,20 @@
-/* Gauge Dashboard Styles - Flixar Drone Dashboard UI/UX Theme Overhaul */
+/* Gauge Dashboard Styles - Tactical Radar Green Theme */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
-  --bg-0: #0d0a09;              /* Deep warm carbon black */
-  --bg-1: rgba(28, 20, 18, 0.65); /* Warm translucent clay card */
-  --bg-2: rgba(42, 30, 27, 0.85); /* Solid header accent card */
-  --border: rgba(194, 174, 160, 0.15); /* Muted warm taupe border */
-  --border-hover: rgba(200, 60, 23, 0.45); /* Burnt copper glow border */
-  --accent: #C83C17;            /* Burnt Orange */
-  --accent-blue: #D39069;       /* Terracotta */
-  --accent-dim: #a64f3c;
-  --warn: #e0a653;              /* Desert Amber */
-  --crit: #e83e2e;              /* Volcanic Red */
-  --text: #f6f5f5;              /* Off-white */
-  --text-dim: #a09795;          /* Warm grey labels */
-  --shadow: rgba(200, 60, 23, 0.08);
+  --bg-0: #030a04;              /* Deep tactical black-green */
+  --bg-1: rgba(8, 22, 10, 0.72); /* Translucent military card */
+  --bg-2: rgba(14, 34, 16, 0.90); /* Solid dark green card */
+  --border: rgba(57, 140, 60, 0.2); /* Muted radar green border */
+  --border-hover: rgba(57, 255, 20, 0.45); /* Electric radar green glow border */
+  --accent: #39ff14;            /* Electric Radar Green */
+  --accent-blue: #6bba4f;       /* Olive Field Green */
+  --accent-dim: #3a7a30;
+  --warn: #f5a623;              /* Amber Warning */
+  --crit: #e83e2e;              /* Danger Red */
+  --text: #ddf0d0;              /* Light green-tinted white */
+  --text-dim: #6a8c5a;          /* Muted tactical green labels */
+  --shadow: rgba(57, 255, 20, 0.06);
   --glass-blur: blur(14px);
 }
 
@@ -25,7 +25,7 @@
 }
 
 html, body {
-  background: radial-gradient(circle at 50% 0%, #2f1912 0%, var(--bg-0) 80%), var(--bg-0);
+  background: radial-gradient(circle at 50% 0%, #0d2010 0%, var(--bg-0) 80%), var(--bg-0);
   color: var(--text);
   font-family: 'Inter', sans-serif;
   font-size: 13px;
@@ -60,7 +60,7 @@ html, body {
   height: 10px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 12px var(--accent), 0 0 3px #fff;
+  box-shadow: 0 0 14px var(--accent), 0 0 4px #b0ffb0;
   animation: pulse 2s infinite ease-in-out;
 }
 
@@ -68,7 +68,7 @@ html, body {
   0%, 100% { 
     opacity: 1; 
     transform: scale(1);
-    box-shadow: 0 0 12px var(--accent), 0 0 3px #fff;
+    box-shadow: 0 0 14px var(--accent), 0 0 4px #b0ffb0;
   }
   50% { 
     opacity: 0.4; 
@@ -88,7 +88,7 @@ html, body {
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 18px;
-  background: linear-gradient(135deg, #ffffff 0%, var(--accent-blue) 100%);
+  background: linear-gradient(135deg, #ddf0d0 0%, var(--accent) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -103,7 +103,7 @@ html, body {
 
 .tabs {
   display: flex;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.5);
   border: 1px solid var(--border);
   padding: 4px;
   border-radius: 30px;
@@ -126,13 +126,13 @@ html, body {
 
 .tab:hover {
   color: var(--text);
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(57, 255, 20, 0.05);
 }
 
 .tab.active {
-  color: #fff;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-blue) 100%);
-  box-shadow: 0 4px 15px rgba(200, 60, 23, 0.3);
+  color: #030a04;
+  background: linear-gradient(135deg, var(--accent) 0%, #6bba4f 100%);
+  box-shadow: 0 4px 15px rgba(57, 255, 20, 0.3);
 }
 
 .hud-info {
@@ -153,10 +153,10 @@ html, body {
 }
 
 .badge.online {
-  color: var(--accent-blue);
-  border-color: rgba(211, 144, 105, 0.3);
-  background: rgba(211, 144, 105, 0.08);
-  box-shadow: 0 0 10px rgba(211, 144, 105, 0.08);
+  color: var(--accent);
+  border-color: rgba(57, 255, 20, 0.35);
+  background: rgba(57, 255, 20, 0.07);
+  box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
 }
 
 .badge.offline {
@@ -788,8 +788,8 @@ html, body {
 
 .health-fill {
   height: 100%;
-  background: #39b54a;
-  box-shadow: 0 0 8px #39b54a;
+  background: var(--accent);
+  box-shadow: 0 0 8px var(--accent);
   border-radius: 3px;
 }
 
@@ -932,14 +932,14 @@ html, body {
 .metric-fill {
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #0072ff, #00f0ff);
-  box-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+  background: linear-gradient(90deg, #1a7a10, #39ff14);
+  box-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
   transition: width 0.2s ease, background 0.3s;
 }
 
 .metric-fill.warning {
-  background: linear-gradient(90deg, #f6931f, #ffaa00);
-  box-shadow: 0 0 8px rgba(255, 170, 0, 0.4);
+  background: linear-gradient(90deg, #a05f00, #f5a623);
+  box-shadow: 0 0 8px rgba(245, 166, 35, 0.4);
 }
 
 .metric-fill.critical {
@@ -985,7 +985,7 @@ html, body {
 .metric-fill-dual-left {
   width: 0%;
   height: 100%;
-  background: linear-gradient(270deg, #0072ff, #00f0ff);
+  background: linear-gradient(270deg, #1a7a10, #39ff14);
   margin-left: auto;
   transition: width 0.2s ease;
 }
@@ -993,7 +993,7 @@ html, body {
 .metric-fill-dual-right {
   width: 0%;
   height: 100%;
-  background: linear-gradient(90deg, #0072ff, #00f0ff);
+  background: linear-gradient(90deg, #1a7a10, #39ff14);
   margin-right: auto;
   transition: width 0.2s ease;
 }
@@ -1071,8 +1071,8 @@ html, body {
 
 .btn-double-border {
   background: transparent;
-  color: #00f0ff;
-  border: 1px solid rgba(0, 240, 255, 0.3);
+  color: var(--accent);
+  border: 1px solid rgba(57, 255, 20, 0.3);
   padding: 8px;
   font-family: 'Orbitron', sans-serif;
   font-size: 10px;
@@ -1090,22 +1090,22 @@ html, body {
   content: "";
   position: absolute;
   inset: -3px;
-  border: 1px solid rgba(0, 240, 255, 0.15);
+  border: 1px solid rgba(57, 255, 20, 0.15);
   border-radius: 6px;
   transition: all 0.3s;
   pointer-events: none;
 }
 
 .btn-double-border:hover {
-  background: rgba(0, 240, 255, 0.05);
-  border-color: rgba(0, 240, 255, 0.8);
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
-  color: #fff;
+  background: rgba(57, 255, 20, 0.05);
+  border-color: rgba(57, 255, 20, 0.8);
+  box-shadow: 0 0 12px rgba(57, 255, 20, 0.25);
+  color: #ddf0d0;
 }
 
 .btn-double-border:hover::after {
   inset: -4px;
-  border-color: rgba(0, 240, 255, 0.4);
+  border-color: rgba(57, 255, 20, 0.4);
 }
 
 .btn-double-border:active {

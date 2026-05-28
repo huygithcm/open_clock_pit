@@ -53,7 +53,7 @@ function drawSwarmMap(snap) {
   const h = rect.height;
   
   // Clear background
-  ctx.fillStyle = '#030508';
+  ctx.fillStyle = '#030a04';
   ctx.fillRect(0, 0, w, h);
   
   // Draw tactical grids
@@ -83,7 +83,7 @@ function drawSwarmMap(snap) {
   
   // Draw dotted pathways
   ctx.save();
-  ctx.strokeStyle = 'rgba(0, 240, 255, 0.12)';
+  ctx.strokeStyle = 'rgba(57, 255, 20, 0.12)';
   ctx.lineWidth = 1.5;
   ctx.setLineDash([4, 4]);
   
@@ -101,8 +101,8 @@ function drawSwarmMap(snap) {
   
   // Draw home point
   ctx.save();
-  ctx.strokeStyle = '#39b54a';
-  ctx.fillStyle = 'rgba(57, 181, 74, 0.15)';
+  ctx.strokeStyle = '#39ff14';
+  ctx.fillStyle = 'rgba(57, 255, 20, 0.12)';
   ctx.lineWidth = 1.5;
   ctx.beginPath();
   ctx.arc(homeX, homeY, 6, 0, Math.PI * 2);
@@ -111,7 +111,7 @@ function drawSwarmMap(snap) {
   
   ctx.beginPath();
   ctx.arc(homeX, homeY, 12, 0, Math.PI * 2);
-  ctx.strokeStyle = 'rgba(57, 181, 74, 0.25)';
+  ctx.strokeStyle = 'rgba(57, 255, 20, 0.22)';
   ctx.setLineDash([2, 3]);
   ctx.stroke();
   ctx.restore();
@@ -190,9 +190,9 @@ function drawSwarmMap(snap) {
     ctx.fillText(name, x + size + 3, y + 3);
   };
 
-  drawChevron(u1x, u1y, u1yaw, 'UAV-01', '#00f0ff', 6, true);
-  drawChevron(u2x, u2y, u2yaw, 'UAV-02', '#39b54a', 6, false);
-  drawChevron(u4x, u4y, u4yaw, 'UAV-04', '#f6931f', 6, true);
+  drawChevron(u1x, u1y, u1yaw, 'UAV-01', '#39ff14', 6, true);
+  drawChevron(u2x, u2y, u2yaw, 'UAV-02', '#6bba4f', 6, false);
+  drawChevron(u4x, u4y, u4yaw, 'UAV-04', '#f5a623', 6, true);
 }
 
 // ========== ALTITUDE LINE CHART ==========
@@ -209,7 +209,7 @@ function drawAltitudeChart(alt) {
   const w = rect.width;
   const h = rect.height;
   
-  ctx.fillStyle = '#030508';
+  ctx.fillStyle = '#030a04';
   ctx.fillRect(0, 0, w, h);
   
   // Grid lines
@@ -259,14 +259,14 @@ function drawAltitudeChart(alt) {
   ctx.closePath();
   
   const grad = ctx.createLinearGradient(0, 0, 0, h);
-  grad.addColorStop(0, 'rgba(0, 240, 255, 0.2)');
-  grad.addColorStop(1, 'rgba(0, 114, 255, 0.0)');
+  grad.addColorStop(0, 'rgba(57, 255, 20, 0.22)');
+  grad.addColorStop(1, 'rgba(26, 122, 16, 0.0)');
   ctx.fillStyle = grad;
   ctx.fill();
   ctx.restore();
 
   // Draw path stroke
-  ctx.strokeStyle = '#00f0ff';
+  ctx.strokeStyle = '#39ff14';
   ctx.lineWidth = 1.5;
   ctx.beginPath();
   ctx.moveTo(points[0].x, points[0].y);
@@ -276,7 +276,7 @@ function drawAltitudeChart(alt) {
   ctx.stroke();
   
   // Alt text markers
-  ctx.fillStyle = 'rgba(211, 144, 105, 0.7)';
+  ctx.fillStyle = 'rgba(107, 186, 79, 0.7)';
   ctx.font = '700 8px "Orbitron", monospace';
   ctx.textAlign = 'right';
   ctx.fillText(`${Math.round(max)}m`, w - 6, 12);
@@ -299,7 +299,7 @@ function drawCameraFeeds(snap) {
     const h = rect.height;
     
     // Camera feed screen background
-    ctx.fillStyle = '#020305';
+    ctx.fillStyle = '#020a03';
     ctx.fillRect(0, 0, w, h);
     
     // Crosshair target
@@ -314,7 +314,7 @@ function drawCameraFeeds(snap) {
     
     // Flight scrolling grids
     const flow = (Date.now() * 0.01) % 30;
-    ctx.strokeStyle = 'rgba(0, 240, 255, 0.02)';
+    ctx.strokeStyle = 'rgba(57, 255, 20, 0.025)';
     for (let y = flow; y < h; y += 30) {
       ctx.beginPath();
       ctx.moveTo(0, y);
@@ -322,17 +322,17 @@ function drawCameraFeeds(snap) {
       ctx.stroke();
     }
     
-    ctx.fillStyle = 'rgba(0, 240, 255, 0.5)';
+    ctx.fillStyle = 'rgba(57, 255, 20, 0.5)';
     ctx.font = '700 7px "Orbitron", monospace';
     if (index === 0) {
       const altVal = snap && snap.alt !== undefined ? Math.round(snap.alt) : 0;
       const yawVal = snap && snap.yaw !== undefined ? Math.round(snap.yaw) : 0;
       ctx.fillText(`ALT: ${altVal}M`, 6, h - 6);
       ctx.fillText(`HDG: ${yawVal.toString().padStart(3, '0')}°`, w - 46, h - 6);
-      ctx.fillStyle = '#00f0ff';
+      ctx.fillStyle = '#39ff14';
       ctx.fillText(`LIVE ●`, w - 30, 10);
     } else if (index === 1) {
-      ctx.fillStyle = '#39b54a';
+      ctx.fillStyle = '#6bba4f';
       ctx.fillText(`ALT: 152M`, 6, h - 6);
       ctx.fillText(`HDG: 325°`, w - 46, h - 6);
       ctx.fillText(`STBY`, w - 24, 10);
